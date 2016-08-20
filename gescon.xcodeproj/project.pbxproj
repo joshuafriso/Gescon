@@ -14,6 +14,7 @@
 		F912A2D81D68AC9E00136202 /* ForumTemaTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F912A2D71D68AC9E00136202 /* ForumTemaTableViewCell.m */; };
 		F912A2DB1D68C73200136202 /* NovaDiscussaoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F912A2DA1D68C73200136202 /* NovaDiscussaoViewController.m */; };
 		F912A2DE1D68D4BD00136202 /* TopicosTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F912A2DD1D68D4BD00136202 /* TopicosTableViewCell.m */; };
+		F912A2E01D68F03F00136202 /* ForumStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F912A2DF1D68F03F00136202 /* ForumStoryboard.storyboard */; };
 		F93D94C31D66777100DFF019 /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F93D94C21D66777000DFF019 /* Realm.framework */; };
 		F93D94C41D66777100DFF019 /* Realm.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F93D94C21D66777000DFF019 /* Realm.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		F93D94C91D6679CF00DFF019 /* NoticiasTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F93D94C81D6679CF00DFF019 /* NoticiasTableViewController.m */; };
@@ -59,6 +60,7 @@
 		F912A2DA1D68C73200136202 /* NovaDiscussaoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NovaDiscussaoViewController.m; sourceTree = "<group>"; };
 		F912A2DC1D68D4BD00136202 /* TopicosTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TopicosTableViewCell.h; sourceTree = "<group>"; };
 		F912A2DD1D68D4BD00136202 /* TopicosTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TopicosTableViewCell.m; sourceTree = "<group>"; };
+		F912A2DF1D68F03F00136202 /* ForumStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ForumStoryboard.storyboard; sourceTree = "<group>"; };
 		F93D94C21D66777000DFF019 /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Realm.framework; sourceTree = "<group>"; };
 		F93D94C71D6679CF00DFF019 /* NoticiasTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NoticiasTableViewController.h; sourceTree = "<group>"; };
 		F93D94C81D6679CF00DFF019 /* NoticiasTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NoticiasTableViewController.m; sourceTree = "<group>"; };
@@ -131,6 +133,7 @@
 				F912A2DA1D68C73200136202 /* NovaDiscussaoViewController.m */,
 				F912A2DC1D68D4BD00136202 /* TopicosTableViewCell.h */,
 				F912A2DD1D68D4BD00136202 /* TopicosTableViewCell.m */,
+				F912A2DF1D68F03F00136202 /* ForumStoryboard.storyboard */,
 			);
 			name = Forum;
 			sourceTree = "<group>";
@@ -244,6 +247,7 @@
 				F9C259D01D5A98FF00CF9DF3 /* LaunchScreen.storyboard in Resources */,
 				F9C259CD1D5A98FF00CF9DF3 /* Assets.xcassets in Resources */,
 				F9C259CB1D5A98FF00CF9DF3 /* Main.storyboard in Resources */,
+				F912A2E01D68F03F00136202 /* ForumStoryboard.storyboard in Resources */,
 				F912A2CB1D68A1C300136202 /* NoticiaStoryBoard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

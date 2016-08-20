@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="mWD-vL-75W">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Fórum-->
+        <scene sceneID="G0a-US-ygl">
+            <objects>
+                <navigationController title="Fórum" id="mWD-vL-75W" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Fórum" image="Forum" id="ya2-eU-IDv"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Fyp-gc-6Ty">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="Dmm-fh-tKB" kind="relationship" relationship="rootViewController" id="rJQ-pb-Sry"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Obi-5b-pGl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="884" y="-94"/>
+        </scene>
+        <!--Forum Table View Controller-->
+        <scene sceneID="QLT-BJ-HER">
+            <objects>
+                <tableViewController title="Forum Table View Controller" id="Dmm-fh-tKB" customClass="ForumTableViewController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="MJB-ba-DEV">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="TemaForumCell" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="DicussaoCell" textLabel="yfy-W4-6Bw" style="IBUITableViewCellStyleDefault" id="69L-ZR-sUU" customClass="ForumTemaTableViewCell">
+                                <rect key="frame" x="0.0" y="92" width="600" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="69L-ZR-sUU" id="9bP-zT-XFc">
+                                    <rect key="frame" x="0.0" y="0.0" width="567" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="yfy-W4-6Bw">
+                                            <rect key="frame" x="15" y="0.0" width="550" height="43"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="temaCellForumTable" destination="9bP-zT-XFc" id="gIk-cV-YoZ"/>
+                                    <outlet property="temaCellLabelForum" destination="yfy-W4-6Bw" id="nkK-B7-BZp"/>
+                                    <segue destination="n6z-HG-uM0" kind="show" identifier="SetaDiscussaoForum" id="BXm-5Z-mGn">
+                                        <nil key="action"/>
+                                    </segue>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="Dmm-fh-tKB" id="9f7-Na-01a"/>
+                            <outlet property="delegate" destination="Dmm-fh-tKB" id="hJZ-kv-LyJ"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Fórum" id="UeU-1S-39a">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="hji-Ry-vdd">
+                            <connections>
+                                <segue destination="GJT-8M-fDK" kind="presentation" id="LuY-mH-Yah"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Vig-Ce-u9W" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1560" y="-94"/>
+        </scene>
+        <!--Tópico-->
+        <scene sceneID="bMp-LT-GTp">
+            <objects>
+                <tableViewController id="n6z-HG-uM0" customClass="TopicoTableViewController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="geb-kG-Zb4">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="MensagemTopicoForum" rowHeight="159" id="q4E-k1-XuQ" customClass="TopicosTableViewCell">
+                                <rect key="frame" x="0.0" y="92" width="600" height="159"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="q4E-k1-XuQ" id="dOE-bU-iQ1">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="158"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="Nome" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="41Y-J0-LHR">
+                                            <rect key="frame" x="8" y="8" width="579" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="Lorem ipsum" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sgI-i7-Kij">
+                                            <rect key="frame" x="8" y="39" width="584" height="106"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="Data" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F9i-bn-FrE">
+                                            <rect key="frame" x="546" y="8" width="46" height="21"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="46" id="Jck-8e-n0Q"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="trailingMargin" secondItem="41Y-J0-LHR" secondAttribute="trailing" constant="5" id="91q-v1-Vo0"/>
+                                        <constraint firstItem="F9i-bn-FrE" firstAttribute="trailing" secondItem="dOE-bU-iQ1" secondAttribute="trailingMargin" id="AKa-My-F99"/>
+                                        <constraint firstItem="sgI-i7-Kij" firstAttribute="top" secondItem="41Y-J0-LHR" secondAttribute="bottom" constant="10" id="Pga-GZ-kp9"/>
+                                        <constraint firstItem="41Y-J0-LHR" firstAttribute="leading" secondItem="dOE-bU-iQ1" secondAttribute="leadingMargin" id="U4D-vz-IH3"/>
+                                        <constraint firstItem="41Y-J0-LHR" firstAttribute="top" secondItem="dOE-bU-iQ1" secondAttribute="topMargin" id="bXx-sc-E7L"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="sgI-i7-Kij" secondAttribute="bottom" constant="5" id="cn0-rH-FJg"/>
+                                        <constraint firstItem="F9i-bn-FrE" firstAttribute="trailing" secondItem="sgI-i7-Kij" secondAttribute="trailing" id="fhW-02-vtG"/>
+                                        <constraint firstItem="sgI-i7-Kij" firstAttribute="leading" secondItem="41Y-J0-LHR" secondAttribute="leading" id="q0c-ku-dMC"/>
+                                        <constraint firstItem="F9i-bn-FrE" firstAttribute="top" secondItem="41Y-J0-LHR" secondAttribute="top" id="qDZ-Z6-j2T"/>
+                                        <constraint firstItem="F9i-bn-FrE" firstAttribute="bottom" secondItem="41Y-J0-LHR" secondAttribute="bottom" id="zTG-F4-3Tx"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="dataPostagemDiscussao" destination="F9i-bn-FrE" id="u9g-wO-gmQ"/>
+                                    <outlet property="detalhesDicussao" destination="sgI-i7-Kij" id="vwS-6Z-gHP"/>
+                                    <outlet property="nomeUsuarioDiscussao" destination="41Y-J0-LHR" id="HEz-hw-FrZ"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="n6z-HG-uM0" id="JAm-vY-ZwY"/>
+                            <outlet property="delegate" destination="n6z-HG-uM0" id="Xcd-Ia-8Qv"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Tópico" id="mzv-Aw-cOt"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0eE-Rw-HEK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1560" y="616"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="4pE-A0-ADJ">
+            <objects>
+                <navigationController id="GJT-8M-fDK" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="oFk-9R-4Q7">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="CbU-Gw-2wD" kind="relationship" relationship="rootViewController" id="VA1-0u-NLf"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EAQ-H7-vjL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2238" y="-94"/>
+        </scene>
+        <!--Nova Discussão View Controller-->
+        <scene sceneID="Cnd-NU-4rb">
+            <objects>
+                <viewController title="Nova Discussão View Controller" id="CbU-Gw-2wD" customClass="NovaDiscussaoViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="SkL-AJ-RAf"/>
+                        <viewControllerLayoutGuide type="bottom" id="eJk-lU-Qqf"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="pfq-xi-JiD">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tema" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="foP-5B-3bj">
+                                <rect key="frame" x="5" y="74" width="42" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ab8-A4-AJq">
+                                <rect key="frame" x="57" y="74" width="538" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Importância" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hO0-3I-QXh">
+                                <rect key="frame" x="5" y="113" width="91" height="25"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Detalhes" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="deY-rH-6Gk">
+                                <rect key="frame" x="5" y="153" width="68" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="GDA-iU-vo3">
+                                <rect key="frame" x="5" y="184" width="590" height="400"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="400" id="VRJ-NU-Ihd"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="9K6-hz-T4H">
+                                <rect key="frame" x="106" y="114" width="155" height="29"/>
+                                <segments>
+                                    <segment title="Baixa"/>
+                                    <segment title="Média"/>
+                                    <segment title="Alta"/>
+                                </segments>
+                                <connections>
+                                    <action selector="botaoImportanciaNovaDisc:" destination="CbU-Gw-2wD" eventType="valueChanged" id="q5v-za-c34"/>
+                                </connections>
+                            </segmentedControl>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="GDA-iU-vo3" firstAttribute="top" secondItem="deY-rH-6Gk" secondAttribute="bottom" constant="10" id="81X-BA-VQH"/>
+                            <constraint firstAttribute="trailing" secondItem="Ab8-A4-AJq" secondAttribute="trailing" constant="5" id="8ck-Ow-Fv7"/>
+                            <constraint firstItem="deY-rH-6Gk" firstAttribute="leading" secondItem="foP-5B-3bj" secondAttribute="leading" id="8dF-xJ-4xD"/>
+                            <constraint firstItem="Ab8-A4-AJq" firstAttribute="baseline" secondItem="foP-5B-3bj" secondAttribute="baseline" id="EoQ-Sf-IVa"/>
+                            <constraint firstItem="deY-rH-6Gk" firstAttribute="top" secondItem="hO0-3I-QXh" secondAttribute="bottom" constant="15" id="Qxb-x9-NbY"/>
+                            <constraint firstItem="GDA-iU-vo3" firstAttribute="leading" secondItem="pfq-xi-JiD" secondAttribute="leading" constant="5" id="SPm-dS-1TS"/>
+                            <constraint firstItem="9K6-hz-T4H" firstAttribute="top" secondItem="Ab8-A4-AJq" secondAttribute="bottom" constant="10" id="SRC-dV-Q18"/>
+                            <constraint firstItem="9K6-hz-T4H" firstAttribute="leading" secondItem="hO0-3I-QXh" secondAttribute="trailing" constant="10" id="Y81-d6-lab"/>
+                            <constraint firstItem="hO0-3I-QXh" firstAttribute="top" secondItem="foP-5B-3bj" secondAttribute="bottom" constant="15" id="ZDK-8J-d5Z"/>
+                            <constraint firstItem="9K6-hz-T4H" firstAttribute="baseline" secondItem="hO0-3I-QXh" secondAttribute="baseline" id="bzD-f0-ayG"/>
+                            <constraint firstItem="foP-5B-3bj" firstAttribute="leading" secondItem="pfq-xi-JiD" secondAttribute="leading" constant="5" id="c8s-ZM-nVp"/>
+                            <constraint firstAttribute="trailing" secondItem="GDA-iU-vo3" secondAttribute="trailing" constant="5" id="cbt-I6-5Dz"/>
+                            <constraint firstItem="foP-5B-3bj" firstAttribute="top" secondItem="SkL-AJ-RAf" secondAttribute="bottom" constant="10" id="jSN-Cx-7cf"/>
+                            <constraint firstItem="Ab8-A4-AJq" firstAttribute="top" secondItem="SkL-AJ-RAf" secondAttribute="bottom" constant="10" id="pHu-2c-BdJ"/>
+                            <constraint firstItem="hO0-3I-QXh" firstAttribute="leading" secondItem="foP-5B-3bj" secondAttribute="leading" id="tGG-Bs-nz0"/>
+                            <constraint firstItem="Ab8-A4-AJq" firstAttribute="leading" secondItem="foP-5B-3bj" secondAttribute="trailing" constant="10" id="vEA-SZ-iqz"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Novo Tópico" id="mJY-g8-PhC">
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="sIF-fK-bHJ">
+                            <connections>
+                                <action selector="botaoCancelNovaDisc:" destination="CbU-Gw-2wD" id="Zdc-Ub-NX9"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="Nml-xS-xD9">
+                            <connections>
+                                <action selector="botaoDoneNovaDisc:" destination="CbU-Gw-2wD" id="UVt-C5-t2O"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="detalhesNovaDiscussao" destination="GDA-iU-vo3" id="gIv-gz-nBL"/>
+                        <outlet property="importanciaNovaDiscussao" destination="9K6-hz-T4H" id="luF-zX-WA0"/>
+                        <outlet property="temaNovaDiscussao" destination="Ab8-A4-AJq" id="4hI-V2-xL8"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yEL-ll-2HD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2965" y="-94"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Forum" width="32" height="32"/>
+    </resources>
+</document>
