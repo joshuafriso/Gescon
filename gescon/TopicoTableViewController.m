@@ -50,12 +50,14 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     TopicosTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"MensagemTopicoForum" forIndexPath:indexPath];
     Forum *forumTopico = _arrayTopicoDetalhes[indexPath.row];
-    cell.nomeUsuarioDiscussao.text = forumTopico.usuarioLogado;
-    cell.detalhesDicussao.text = forumTopico.detalhes;
-    cell.dataPostagemDiscussao.text = forumTopico.dataPostagem.description;
+    if(forumTopico.objectId == self.forum.objectId){
+        cell.nomeUsuarioDiscussao.text = forumTopico.usuarioLogado;
+        cell.detalhesDicussao.text = forumTopico.detalhes;
+        cell.dataPostagemDiscussao.text = forumTopico.dataPostagem.description;
 
-    cell.forum = forumTopico;
-        
+        cell.forum = forumTopico;
+    }
+    
     return cell;
 }
 

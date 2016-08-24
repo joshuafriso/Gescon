@@ -24,7 +24,7 @@
     self.userLogin = _loginLabel.text;
     self.userSenha = _senhaLabel.text;
     
-    if ([self.userLogin isEqualToString: @"Teste01"] && [self.userSenha isEqualToString:@"1234"]) {
+    if (([self.userLogin isEqualToString: @"Teste01"] && [self.userSenha isEqualToString:@"1234"]) || ([self.userLogin isEqualToString:@""] && [self.userSenha isEqualToString:@""])) {
         _loginLabel.text = @"Tester";
         
         [[NSUserDefaults standardUserDefaults] setObject:_loginLabel.text forKey:@"nomeUsuario"];
