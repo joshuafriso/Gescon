@@ -47,6 +47,30 @@
     return self;
 }
 
+-(void) inserirMensagemComTexto: (NSString *) texto eUsuarioLogado: (NSString *) usuario eData: (NSDate *) data {
+    
+    Mensagem *m = [[Mensagem alloc] init];
+    m.text = texto;
+    m.usuarioLogado = usuario;
+    m.dataPostagem = data;
+    m.forumId = self.objectId;
+    
+    RLMRealm *realmForum = [RLMRealm defaultRealm];
+    
+    [realmForum beginWriteTransaction];
+    [realmForum addObject:m];
+    [realmForum commitWriteTransaction];
+    
+}
 
+-(RLMResults<Mensagem *> *) getMensagens {
+    
+    NSPredicate *pred = [NSPredicate predicateWithFormat:@"forumId = %d",
+                         self.objectId];
+    
+    RLMResults<Mensagem *> *msg = [Mensagem objectsWithPredicate:pred];
+    
+    return msg;
+}
 
 @end

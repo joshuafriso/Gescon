@@ -19,7 +19,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.arrayTopicoDetalhes = [Forum allObjects];
+    self.arrayTopicoDetalhes = [self.forum getMensagens];
     
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
@@ -48,14 +48,17 @@
 
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    
     TopicosTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"MensagemTopicoForum" forIndexPath:indexPath];
-    Forum *forumTopico = _arrayTopicoDetalhes[indexPath.row];
-    if(forumTopico.objectId == self.forum.objectId){
-        cell.nomeUsuarioDiscussao.text = forumTopico.usuarioLogado;
-        cell.detalhesDicussao.text = forumTopico.detalhes;
-        cell.dataPostagemDiscussao.text = forumTopico.dataPostagem.description;
-
-        cell.forum = forumTopico;
+    
+    Mensagem *msg = _arrayTopicoDetalhes[indexPath.row];
+    
+    if(msg.objectId == self.forum.objectId){
+        
+        cell.nomeUsuarioDiscussao.text = msg.usuarioLogado;
+        cell.detalhesDicussao.text = msg.text;
+        cell.dataPostagemDiscussao.text = msg.dataPostagem.description;
+        
     }
     
     return cell;

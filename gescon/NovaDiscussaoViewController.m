@@ -28,9 +28,8 @@
 - (IBAction)botaoDoneNovaDisc:(id)sender {
     Forum *forumNova = [[Forum alloc] initWithTema:_temaNovaDiscussao.text];
     forumNova.importancia = (int)_importanciaNovaDiscussao.selectedSegmentIndex;
-    forumNova.detalhes = _detalhesNovaDiscussao.text;
-    forumNova.usuarioLogado = [[NSUserDefaults standardUserDefaults] objectForKey:@"nomeUsuario"];
-    forumNova.dataPostagem = [NSDate date];
+    
+    [forumNova inserirMensagemComTexto:_detalhesNovaDiscussao.text eUsuarioLogado:[[NSUserDefaults standardUserDefaults] objectForKey:@"nomeUsuario"] eData:[NSDate date]];
     
     RLMRealm *realmForum = [RLMRealm defaultRealm];
     

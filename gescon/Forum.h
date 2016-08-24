@@ -7,16 +7,17 @@
 //
 
 #import <Realm/Realm.h>
+#import "Mensagem.h"
 
 @interface Forum : RLMObject
 
 @property int objectId;
 @property NSString *tema;
 @property int importancia;
-@property NSString *detalhes;
-@property NSString *usuarioLogado;
-@property NSDate *dataPostagem;
 
 -(instancetype) initWithTema: (NSString *) tema;
+-(void) inserirMensagemComTexto: (NSString *) texto eUsuarioLogado: (NSString *) usuario eData: (NSDate *) data;
+-(RLMResults<Mensagem *> *) getMensagens;
 
 @end
+

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C55AEBF01D6D2C9700F55425 /* Mensagem.m in Sources */ = {isa = PBXBuildFile; fileRef = C55AEBEF1D6D2C9700F55425 /* Mensagem.m */; };
 		F912A2CB1D68A1C300136202 /* NoticiaStoryBoard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F912A2CA1D68A1C300136202 /* NoticiaStoryBoard.storyboard */; };
 		F912A2CE1D68A4ED00136202 /* ForumTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F912A2CD1D68A4ED00136202 /* ForumTableViewController.m */; };
 		F912A2D21D68A52900136202 /* Forum.m in Sources */ = {isa = PBXBuildFile; fileRef = F912A2D11D68A52900136202 /* Forum.m */; };
@@ -47,6 +48,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		C55AEBEE1D6D2C9700F55425 /* Mensagem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Mensagem.h; sourceTree = "<group>"; };
+		C55AEBEF1D6D2C9700F55425 /* Mensagem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Mensagem.m; sourceTree = "<group>"; };
 		F912A2CA1D68A1C300136202 /* NoticiaStoryBoard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = NoticiaStoryBoard.storyboard; sourceTree = "<group>"; };
 		F912A2CC1D68A4ED00136202 /* ForumTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ForumTableViewController.h; sourceTree = "<group>"; };
 		F912A2CD1D68A4ED00136202 /* ForumTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ForumTableViewController.m; sourceTree = "<group>"; };
@@ -134,6 +137,8 @@
 				F912A2DC1D68D4BD00136202 /* TopicosTableViewCell.h */,
 				F912A2DD1D68D4BD00136202 /* TopicosTableViewCell.m */,
 				F912A2DF1D68F03F00136202 /* ForumStoryboard.storyboard */,
+				C55AEBEE1D6D2C9700F55425 /* Mensagem.h */,
+				C55AEBEF1D6D2C9700F55425 /* Mensagem.m */,
 			);
 			name = Forum;
 			sourceTree = "<group>";
@@ -281,6 +286,7 @@
 				F9C259C81D5A98FF00CF9DF3 /* ViewController.m in Sources */,
 				F912A2DE1D68D4BD00136202 /* TopicosTableViewCell.m in Sources */,
 				F912A2D21D68A52900136202 /* Forum.m in Sources */,
+				C55AEBF01D6D2C9700F55425 /* Mensagem.m in Sources */,
 				F9C259C51D5A98FF00CF9DF3 /* AppDelegate.m in Sources */,
 				F912A2D51D68AC5900136202 /* TopicoTableViewController.m in Sources */,
 				F94B87451D67E5C100F73801 /* NoticiaViewController.m in Sources */,

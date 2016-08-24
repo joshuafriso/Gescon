@@ -57,6 +57,7 @@
 
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    
     ForumTemaTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"DicussaoCell" forIndexPath:indexPath];
     
     Forum *forum = _arrayForum[indexPath.row];
