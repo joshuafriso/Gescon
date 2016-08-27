@@ -83,27 +83,21 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="MensagemTopicoForum" rowHeight="159" id="q4E-k1-XuQ" customClass="TopicosTableViewCell">
-                                <rect key="frame" x="0.0" y="92" width="600" height="159"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="MensagemTopicoForum" id="q4E-k1-XuQ" customClass="TopicosTableViewCell">
+                                <rect key="frame" x="0.0" y="92" width="600" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="q4E-k1-XuQ" id="dOE-bU-iQ1">
-                                    <rect key="frame" x="0.0" y="0.0" width="600" height="158"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="Nome" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="41Y-J0-LHR">
-                                            <rect key="frame" x="8" y="8" width="579" height="21"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="Lorem ipsum" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sgI-i7-Kij">
-                                            <rect key="frame" x="8" y="39" width="584" height="106"/>
+                                            <rect key="frame" x="8" y="8" width="579" height="17"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="Data" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F9i-bn-FrE">
-                                            <rect key="frame" x="512" y="8" width="80" height="21"/>
+                                            <rect key="frame" x="512" y="8" width="80" height="17"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="80" id="9vE-DL-ZGZ"/>
                                                 <constraint firstAttribute="width" constant="80" id="Jck-8e-n0Q"/>
@@ -117,11 +111,17 @@
                                                 </mask>
                                             </variation>
                                         </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="Lorem ipsum" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sgI-i7-Kij">
+                                            <rect key="frame" x="8" y="30" width="584" height="0.0"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
                                     </subviews>
                                     <constraints>
                                         <constraint firstAttribute="trailingMargin" secondItem="41Y-J0-LHR" secondAttribute="trailing" constant="5" id="91q-v1-Vo0"/>
                                         <constraint firstItem="F9i-bn-FrE" firstAttribute="trailing" secondItem="dOE-bU-iQ1" secondAttribute="trailingMargin" id="AKa-My-F99"/>
-                                        <constraint firstItem="sgI-i7-Kij" firstAttribute="top" secondItem="41Y-J0-LHR" secondAttribute="bottom" constant="10" id="Pga-GZ-kp9"/>
+                                        <constraint firstItem="sgI-i7-Kij" firstAttribute="top" secondItem="41Y-J0-LHR" secondAttribute="bottom" constant="5" id="Pga-GZ-kp9"/>
                                         <constraint firstItem="41Y-J0-LHR" firstAttribute="leading" secondItem="dOE-bU-iQ1" secondAttribute="leadingMargin" id="U4D-vz-IH3"/>
                                         <constraint firstItem="41Y-J0-LHR" firstAttribute="top" secondItem="dOE-bU-iQ1" secondAttribute="topMargin" id="bXx-sc-E7L"/>
                                         <constraint firstAttribute="bottomMargin" secondItem="sgI-i7-Kij" secondAttribute="bottom" constant="5" id="cn0-rH-FJg"/>

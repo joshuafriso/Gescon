@@ -26,9 +26,9 @@
     
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
-    
-    self.tableView.estimatedRowHeight = 100;
+
     self.tableView.rowHeight = UITableViewAutomaticDimension;
+    self.tableView.estimatedRowHeight = 100;
 }
 
 - (void)didReceiveMemoryWarning {
@@ -53,7 +53,7 @@
     
     Mensagem *msg = _arrayTopicoDetalhes[indexPath.row];
     
-    if(msg.objectId == self.forum.objectId){
+    if(msg.forumId == _forum.objectId){
         
         cell.nomeUsuarioDiscussao.text = msg.usuarioLogado;
         cell.detalhesDicussao.text = msg.text;
