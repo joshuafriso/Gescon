@@ -25,6 +25,14 @@
 		F94B87481D67E85000F73801 /* NovaNoticiaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F94B87471D67E85000F73801 /* NovaNoticiaViewController.m */; };
 		F95A66061D60E76C0051C84A /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F95A66051D60E76C0051C84A /* LoginViewController.m */; };
 		F970A48B1D63D0510090032B /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F970A48A1D63D0510090032B /* HomeViewController.m */; };
+		F97C2BD11D71FE0B008340C3 /* ClassificadosTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F97C2BD01D71FE0B008340C3 /* ClassificadosTableViewController.m */; };
+		F97C2BD41D71FEF2008340C3 /* ProdutosTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F97C2BD31D71FEF2008340C3 /* ProdutosTableViewCell.m */; };
+		F97C2BDA1D720027008340C3 /* Produto.m in Sources */ = {isa = PBXBuildFile; fileRef = F97C2BD91D720027008340C3 /* Produto.m */; };
+		F97C2BDD1D720E99008340C3 /* NovoProdutoTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F97C2BDC1D720E99008340C3 /* NovoProdutoTableViewController.m */; };
+		F97C2BE31D7211C5008340C3 /* AddImagemNovoProdCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F97C2BE21D7211C5008340C3 /* AddImagemNovoProdCollectionViewCell.m */; };
+		F97C2BE61D7211E3008340C3 /* ExibirImagemNovoProdCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F97C2BE51D7211E3008340C3 /* ExibirImagemNovoProdCollectionViewCell.m */; };
+		F97C2BE91D7229B1008340C3 /* ProdutoDetalhesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F97C2BE81D7229B1008340C3 /* ProdutoDetalhesViewController.m */; };
+		F97C2BEC1D722E29008340C3 /* ClassificadosStoreBoard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F97C2BEB1D722E29008340C3 /* ClassificadosStoreBoard.storyboard */; };
 		F9C259C21D5A98FF00CF9DF3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F9C259C11D5A98FF00CF9DF3 /* main.m */; };
 		F9C259C51D5A98FF00CF9DF3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F9C259C41D5A98FF00CF9DF3 /* AppDelegate.m */; };
 		F9C259C81D5A98FF00CF9DF3 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F9C259C71D5A98FF00CF9DF3 /* ViewController.m */; };
@@ -79,6 +87,21 @@
 		F95A66051D60E76C0051C84A /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
 		F970A4891D63D0510090032B /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
 		F970A48A1D63D0510090032B /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
+		F97C2BCF1D71FE0B008340C3 /* ClassificadosTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClassificadosTableViewController.h; sourceTree = "<group>"; };
+		F97C2BD01D71FE0B008340C3 /* ClassificadosTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClassificadosTableViewController.m; sourceTree = "<group>"; };
+		F97C2BD21D71FEF2008340C3 /* ProdutosTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProdutosTableViewCell.h; sourceTree = "<group>"; };
+		F97C2BD31D71FEF2008340C3 /* ProdutosTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProdutosTableViewCell.m; sourceTree = "<group>"; };
+		F97C2BD81D720027008340C3 /* Produto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Produto.h; sourceTree = "<group>"; };
+		F97C2BD91D720027008340C3 /* Produto.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Produto.m; sourceTree = "<group>"; };
+		F97C2BDB1D720E99008340C3 /* NovoProdutoTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NovoProdutoTableViewController.h; sourceTree = "<group>"; };
+		F97C2BDC1D720E99008340C3 /* NovoProdutoTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NovoProdutoTableViewController.m; sourceTree = "<group>"; };
+		F97C2BE11D7211C5008340C3 /* AddImagemNovoProdCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddImagemNovoProdCollectionViewCell.h; sourceTree = "<group>"; };
+		F97C2BE21D7211C5008340C3 /* AddImagemNovoProdCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddImagemNovoProdCollectionViewCell.m; sourceTree = "<group>"; };
+		F97C2BE41D7211E3008340C3 /* ExibirImagemNovoProdCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExibirImagemNovoProdCollectionViewCell.h; sourceTree = "<group>"; };
+		F97C2BE51D7211E3008340C3 /* ExibirImagemNovoProdCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExibirImagemNovoProdCollectionViewCell.m; sourceTree = "<group>"; };
+		F97C2BE71D7229B1008340C3 /* ProdutoDetalhesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProdutoDetalhesViewController.h; sourceTree = "<group>"; };
+		F97C2BE81D7229B1008340C3 /* ProdutoDetalhesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProdutoDetalhesViewController.m; sourceTree = "<group>"; };
+		F97C2BEB1D722E29008340C3 /* ClassificadosStoreBoard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ClassificadosStoreBoard.storyboard; sourceTree = "<group>"; };
 		F9C259BD1D5A98FF00CF9DF3 /* gescon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = gescon.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F9C259C11D5A98FF00CF9DF3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		F9C259C31D5A98FF00CF9DF3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -143,6 +166,28 @@
 			name = Forum;
 			sourceTree = "<group>";
 		};
+		F97C2BEA1D722DFF008340C3 /* Classificados */ = {
+			isa = PBXGroup;
+			children = (
+				F97C2BCF1D71FE0B008340C3 /* ClassificadosTableViewController.h */,
+				F97C2BD01D71FE0B008340C3 /* ClassificadosTableViewController.m */,
+				F97C2BD21D71FEF2008340C3 /* ProdutosTableViewCell.h */,
+				F97C2BD31D71FEF2008340C3 /* ProdutosTableViewCell.m */,
+				F97C2BD81D720027008340C3 /* Produto.h */,
+				F97C2BD91D720027008340C3 /* Produto.m */,
+				F97C2BDB1D720E99008340C3 /* NovoProdutoTableViewController.h */,
+				F97C2BDC1D720E99008340C3 /* NovoProdutoTableViewController.m */,
+				F97C2BE71D7229B1008340C3 /* ProdutoDetalhesViewController.h */,
+				F97C2BE81D7229B1008340C3 /* ProdutoDetalhesViewController.m */,
+				F97C2BE11D7211C5008340C3 /* AddImagemNovoProdCollectionViewCell.h */,
+				F97C2BE21D7211C5008340C3 /* AddImagemNovoProdCollectionViewCell.m */,
+				F97C2BE41D7211E3008340C3 /* ExibirImagemNovoProdCollectionViewCell.h */,
+				F97C2BE51D7211E3008340C3 /* ExibirImagemNovoProdCollectionViewCell.m */,
+				F97C2BEB1D722E29008340C3 /* ClassificadosStoreBoard.storyboard */,
+			);
+			name = Classificados;
+			sourceTree = "<group>";
+		};
 		F9C259B41D5A98FF00CF9DF3 = {
 			isa = PBXGroup;
 			children = (
@@ -163,6 +208,7 @@
 		F9C259BF1D5A98FF00CF9DF3 /* gescon */ = {
 			isa = PBXGroup;
 			children = (
+				F97C2BEA1D722DFF008340C3 /* Classificados */,
 				F912A2CF1D68A4F700136202 /* Forum */,
 				F912A2C91D68A11300136202 /* Noticia */,
 				F9C259C31D5A98FF00CF9DF3 /* AppDelegate.h */,
@@ -253,6 +299,7 @@
 				F9C259CD1D5A98FF00CF9DF3 /* Assets.xcassets in Resources */,
 				F9C259CB1D5A98FF00CF9DF3 /* Main.storyboard in Resources */,
 				F912A2E01D68F03F00136202 /* ForumStoryboard.storyboard in Resources */,
+				F97C2BEC1D722E29008340C3 /* ClassificadosStoreBoard.storyboard in Resources */,
 				F912A2CB1D68A1C300136202 /* NoticiaStoryBoard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -280,6 +327,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F97C2BE91D7229B1008340C3 /* ProdutoDetalhesViewController.m in Sources */,
 				F912A2CE1D68A4ED00136202 /* ForumTableViewController.m in Sources */,
 				F95A66061D60E76C0051C84A /* LoginViewController.m in Sources */,
 				F912A2D81D68AC9E00136202 /* ForumTemaTableViewCell.m in Sources */,
@@ -289,13 +337,19 @@
 				C55AEBF01D6D2C9700F55425 /* Mensagem.m in Sources */,
 				F9C259C51D5A98FF00CF9DF3 /* AppDelegate.m in Sources */,
 				F912A2D51D68AC5900136202 /* TopicoTableViewController.m in Sources */,
+				F97C2BDA1D720027008340C3 /* Produto.m in Sources */,
 				F94B87451D67E5C100F73801 /* NoticiaViewController.m in Sources */,
+				F97C2BD11D71FE0B008340C3 /* ClassificadosTableViewController.m in Sources */,
 				F93D94CF1D6681EA00DFF019 /* Noticia.m in Sources */,
+				F97C2BDD1D720E99008340C3 /* NovoProdutoTableViewController.m in Sources */,
 				F912A2DB1D68C73200136202 /* NovaDiscussaoViewController.m in Sources */,
+				F97C2BD41D71FEF2008340C3 /* ProdutosTableViewCell.m in Sources */,
 				F970A48B1D63D0510090032B /* HomeViewController.m in Sources */,
+				F97C2BE31D7211C5008340C3 /* AddImagemNovoProdCollectionViewCell.m in Sources */,
 				F94B87481D67E85000F73801 /* NovaNoticiaViewController.m in Sources */,
 				F93D94CC1D667D9400DFF019 /* NoticiaTableViewCell.m in Sources */,
 				F9C259C21D5A98FF00CF9DF3 /* main.m in Sources */,
+				F97C2BE61D7211E3008340C3 /* ExibirImagemNovoProdCollectionViewCell.m in Sources */,
 				F93D94C91D6679CF00DFF019 /* NoticiasTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
