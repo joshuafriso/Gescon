@@ -139,6 +139,16 @@
             </objects>
             <point key="canvasLocation" x="706.5" y="-375"/>
         </scene>
+        <!--AvisoChegadaStoryboard-->
+        <scene sceneID="hJQ-z9-nwT">
+            <objects>
+                <viewControllerPlaceholder storyboardName="AvisoChegadaStoryboard" id="eKA-G7-6Cu" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="PfO-DF-Enn"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Uu6-ae-deT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="706.5" y="-325"/>
+        </scene>
         <!--Home-->
         <scene sceneID="Msf-gW-bu3">
             <objects>
@@ -174,8 +184,8 @@
                                             <rect key="frame" x="0.0" y="0.0" width="527" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gfV-MB-Mjo">
-                                                    <rect key="frame" x="0.0" y="0.0" width="530" height="43"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gfV-MB-Mjo">
+                                                    <rect key="frame" x="0.0" y="0.0" width="497" height="43"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
@@ -247,6 +257,7 @@
                         <segue destination="lWJ-Fb-bK8" kind="relationship" relationship="viewControllers" id="l5o-xJ-n14"/>
                         <segue destination="gTh-hS-Wey" kind="relationship" relationship="viewControllers" id="KJM-tx-heb"/>
                         <segue destination="mXa-nU-ro8" kind="relationship" relationship="viewControllers" id="9fk-Ax-U16"/>
+                        <segue destination="eKA-G7-6Cu" kind="relationship" relationship="viewControllers" id="Gai-SS-xnH"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Fu5-DS-SkO" userLabel="First Responder" sceneMemberID="firstResponder"/>

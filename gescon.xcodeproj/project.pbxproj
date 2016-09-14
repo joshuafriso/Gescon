@@ -8,6 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		C55AEBF01D6D2C9700F55425 /* Mensagem.m in Sources */ = {isa = PBXBuildFile; fileRef = C55AEBEF1D6D2C9700F55425 /* Mensagem.m */; };
+		F90362DE1D88C93D00BBF2A2 /* AvisoChegadaTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F90362DD1D88C93D00BBF2A2 /* AvisoChegadaTableViewCell.m */; };
+		F90362E11D88C99B00BBF2A2 /* ListaAvisoChegadaTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F90362E01D88C99B00BBF2A2 /* ListaAvisoChegadaTableViewController.m */; };
+		F90362E41D88CAFF00BBF2A2 /* AvisoChegada.m in Sources */ = {isa = PBXBuildFile; fileRef = F90362E31D88CAFF00BBF2A2 /* AvisoChegada.m */; };
+		F90362E71D88D08B00BBF2A2 /* NovoAvisoChegadaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F90362E61D88D08B00BBF2A2 /* NovoAvisoChegadaViewController.m */; };
+		F90362EA1D88E19900BBF2A2 /* ShowAvisoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F90362E91D88E19900BBF2A2 /* ShowAvisoViewController.m */; };
+		F90362ED1D88F55800BBF2A2 /* AvisoChegadaStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F90362EC1D88F55800BBF2A2 /* AvisoChegadaStoryboard.storyboard */; };
 		F912A2CB1D68A1C300136202 /* NoticiaStoryBoard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F912A2CA1D68A1C300136202 /* NoticiaStoryBoard.storyboard */; };
 		F912A2CE1D68A4ED00136202 /* ForumTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F912A2CD1D68A4ED00136202 /* ForumTableViewController.m */; };
 		F912A2D21D68A52900136202 /* Forum.m in Sources */ = {isa = PBXBuildFile; fileRef = F912A2D11D68A52900136202 /* Forum.m */; };
@@ -58,6 +64,17 @@
 /* Begin PBXFileReference section */
 		C55AEBEE1D6D2C9700F55425 /* Mensagem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Mensagem.h; sourceTree = "<group>"; };
 		C55AEBEF1D6D2C9700F55425 /* Mensagem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Mensagem.m; sourceTree = "<group>"; };
+		F90362DC1D88C93D00BBF2A2 /* AvisoChegadaTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AvisoChegadaTableViewCell.h; sourceTree = "<group>"; };
+		F90362DD1D88C93D00BBF2A2 /* AvisoChegadaTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AvisoChegadaTableViewCell.m; sourceTree = "<group>"; };
+		F90362DF1D88C99B00BBF2A2 /* ListaAvisoChegadaTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListaAvisoChegadaTableViewController.h; sourceTree = "<group>"; };
+		F90362E01D88C99B00BBF2A2 /* ListaAvisoChegadaTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListaAvisoChegadaTableViewController.m; sourceTree = "<group>"; };
+		F90362E21D88CAFF00BBF2A2 /* AvisoChegada.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AvisoChegada.h; sourceTree = "<group>"; };
+		F90362E31D88CAFF00BBF2A2 /* AvisoChegada.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AvisoChegada.m; sourceTree = "<group>"; };
+		F90362E51D88D08B00BBF2A2 /* NovoAvisoChegadaViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NovoAvisoChegadaViewController.h; sourceTree = "<group>"; };
+		F90362E61D88D08B00BBF2A2 /* NovoAvisoChegadaViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NovoAvisoChegadaViewController.m; sourceTree = "<group>"; };
+		F90362E81D88E19900BBF2A2 /* ShowAvisoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShowAvisoViewController.h; sourceTree = "<group>"; };
+		F90362E91D88E19900BBF2A2 /* ShowAvisoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShowAvisoViewController.m; sourceTree = "<group>"; };
+		F90362EC1D88F55800BBF2A2 /* AvisoChegadaStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = AvisoChegadaStoryboard.storyboard; sourceTree = "<group>"; };
 		F912A2CA1D68A1C300136202 /* NoticiaStoryBoard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = NoticiaStoryBoard.storyboard; sourceTree = "<group>"; };
 		F912A2CC1D68A4ED00136202 /* ForumTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ForumTableViewController.h; sourceTree = "<group>"; };
 		F912A2CD1D68A4ED00136202 /* ForumTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ForumTableViewController.m; sourceTree = "<group>"; };
@@ -126,6 +143,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F90362EB1D88F52600BBF2A2 /* Aviso_Chegada */ = {
+			isa = PBXGroup;
+			children = (
+				F90362DF1D88C99B00BBF2A2 /* ListaAvisoChegadaTableViewController.h */,
+				F90362E01D88C99B00BBF2A2 /* ListaAvisoChegadaTableViewController.m */,
+				F90362DC1D88C93D00BBF2A2 /* AvisoChegadaTableViewCell.h */,
+				F90362DD1D88C93D00BBF2A2 /* AvisoChegadaTableViewCell.m */,
+				F90362E21D88CAFF00BBF2A2 /* AvisoChegada.h */,
+				F90362E31D88CAFF00BBF2A2 /* AvisoChegada.m */,
+				F90362E51D88D08B00BBF2A2 /* NovoAvisoChegadaViewController.h */,
+				F90362E61D88D08B00BBF2A2 /* NovoAvisoChegadaViewController.m */,
+				F90362E81D88E19900BBF2A2 /* ShowAvisoViewController.h */,
+				F90362E91D88E19900BBF2A2 /* ShowAvisoViewController.m */,
+				F90362EC1D88F55800BBF2A2 /* AvisoChegadaStoryboard.storyboard */,
+			);
+			name = Aviso_Chegada;
+			sourceTree = "<group>";
+		};
 		F912A2C91D68A11300136202 /* Noticia */ = {
 			isa = PBXGroup;
 			children = (
@@ -208,6 +243,7 @@
 		F9C259BF1D5A98FF00CF9DF3 /* gescon */ = {
 			isa = PBXGroup;
 			children = (
+				F90362EB1D88F52600BBF2A2 /* Aviso_Chegada */,
 				F97C2BEA1D722DFF008340C3 /* Classificados */,
 				F912A2CF1D68A4F700136202 /* Forum */,
 				F912A2C91D68A11300136202 /* Noticia */,
@@ -298,6 +334,7 @@
 				F9C259D01D5A98FF00CF9DF3 /* LaunchScreen.storyboard in Resources */,
 				F9C259CD1D5A98FF00CF9DF3 /* Assets.xcassets in Resources */,
 				F9C259CB1D5A98FF00CF9DF3 /* Main.storyboard in Resources */,
+				F90362ED1D88F55800BBF2A2 /* AvisoChegadaStoryboard.storyboard in Resources */,
 				F912A2E01D68F03F00136202 /* ForumStoryboard.storyboard in Resources */,
 				F97C2BEC1D722E29008340C3 /* ClassificadosStoreBoard.storyboard in Resources */,
 				F912A2CB1D68A1C300136202 /* NoticiaStoryBoard.storyboard in Resources */,
@@ -328,13 +365,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				F97C2BE91D7229B1008340C3 /* ProdutoDetalhesViewController.m in Sources */,
+				F90362EA1D88E19900BBF2A2 /* ShowAvisoViewController.m in Sources */,
 				F912A2CE1D68A4ED00136202 /* ForumTableViewController.m in Sources */,
 				F95A66061D60E76C0051C84A /* LoginViewController.m in Sources */,
 				F912A2D81D68AC9E00136202 /* ForumTemaTableViewCell.m in Sources */,
 				F9C259C81D5A98FF00CF9DF3 /* ViewController.m in Sources */,
 				F912A2DE1D68D4BD00136202 /* TopicosTableViewCell.m in Sources */,
+				F90362E41D88CAFF00BBF2A2 /* AvisoChegada.m in Sources */,
 				F912A2D21D68A52900136202 /* Forum.m in Sources */,
 				C55AEBF01D6D2C9700F55425 /* Mensagem.m in Sources */,
+				F90362E11D88C99B00BBF2A2 /* ListaAvisoChegadaTableViewController.m in Sources */,
+				F90362E71D88D08B00BBF2A2 /* NovoAvisoChegadaViewController.m in Sources */,
 				F9C259C51D5A98FF00CF9DF3 /* AppDelegate.m in Sources */,
 				F912A2D51D68AC5900136202 /* TopicoTableViewController.m in Sources */,
 				F97C2BDA1D720027008340C3 /* Produto.m in Sources */,
@@ -351,6 +392,7 @@
 				F9C259C21D5A98FF00CF9DF3 /* main.m in Sources */,
 				F97C2BE61D7211E3008340C3 /* ExibirImagemNovoProdCollectionViewCell.m in Sources */,
 				F93D94C91D6679CF00DFF019 /* NoticiasTableViewController.m in Sources */,
+				F90362DE1D88C93D00BBF2A2 /* AvisoChegadaTableViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
