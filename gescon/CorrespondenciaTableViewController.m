@@ -41,7 +41,6 @@
     // Dispose of any resources that can be recreated.
 }
 
-#pragma mark - Table view data source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
 
@@ -58,10 +57,10 @@
     
     Correspondencia *corresp = _arrayCorrespondencia[indexPath.row];
     
-    CorrespondenciaTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"CorrespondenciaCell" forIndexPath:indexPath];
+    CorrespondenciaTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"CorrespoCell" forIndexPath:indexPath];
     
     cell.nomeDestino.text = corresp.nomeDestinatario;
-    
+
     cell.corresp = corresp;
     
     return cell;
@@ -117,8 +116,6 @@
         
     }
     
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
 }
 
 

@@ -32,9 +32,8 @@
     
     RLMRealm *realm = [RLMRealm defaultRealm];
     
-    
     [realm beginWriteTransaction];
-    [realm addOrUpdateObject:corresp];
+    [realm addObject:corresp];
     [realm commitWriteTransaction];
     
     [self dismissViewControllerAnimated:YES completion: ^{

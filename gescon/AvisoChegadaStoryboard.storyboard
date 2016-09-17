@@ -263,23 +263,23 @@
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
-                                <exclude reference="YrO-Mr-XcJ"/>
                                 <exclude reference="KmG-BV-l4r"/>
-                                <exclude reference="ZwO-AF-hns"/>
-                                <exclude reference="Ruu-cd-8rj"/>
                                 <exclude reference="RGM-uH-Vam"/>
-                                <exclude reference="x3Y-N1-egq"/>
+                                <exclude reference="Ruu-cd-8rj"/>
+                                <exclude reference="YrO-Mr-XcJ"/>
+                                <exclude reference="ZwO-AF-hns"/>
+                                <exclude reference="PB1-Hj-f2J"/>
                                 <exclude reference="TkP-He-JaG"/>
                                 <exclude reference="qcM-iU-cO0"/>
-                                <exclude reference="PB1-Hj-f2J"/>
+                                <exclude reference="x3Y-N1-egq"/>
                                 <exclude reference="2Kt-VR-QRW"/>
                                 <exclude reference="ZGl-zC-ge6"/>
                                 <exclude reference="TkX-tP-itR"/>
                                 <exclude reference="bpY-ka-eb2"/>
                                 <exclude reference="1XY-Vj-qIS"/>
                                 <exclude reference="QJh-Du-Mgj"/>
-                                <exclude reference="5lZ-gA-x9j"/>
                                 <exclude reference="2He-fg-7jv"/>
+                                <exclude reference="5lZ-gA-x9j"/>
                                 <exclude reference="HBr-gm-IZ3"/>
                                 <exclude reference="bif-3c-GaL"/>
                             </mask>
@@ -508,13 +508,13 @@
                         <variation key="default">
                             <mask key="constraints">
                                 <exclude reference="xli-AG-kEp"/>
-                                <exclude reference="Pbd-ts-fQh"/>
                                 <exclude reference="7Xr-ej-Bjc"/>
-                                <exclude reference="bu1-2O-FK4"/>
+                                <exclude reference="Pbd-ts-fQh"/>
                                 <exclude reference="CUt-H4-NIh"/>
                                 <exclude reference="Fi0-1U-ne4"/>
-                                <exclude reference="z3S-Dy-8Gg"/>
                                 <exclude reference="bke-Jt-5hf"/>
+                                <exclude reference="bu1-2O-FK4"/>
+                                <exclude reference="z3S-Dy-8Gg"/>
                             </mask>
                         </variation>
                     </view>

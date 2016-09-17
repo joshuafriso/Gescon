@@ -44,6 +44,7 @@
 		F97C2BE61D7211E3008340C3 /* ExibirImagemNovoProdCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F97C2BE51D7211E3008340C3 /* ExibirImagemNovoProdCollectionViewCell.m */; };
 		F97C2BE91D7229B1008340C3 /* ProdutoDetalhesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F97C2BE81D7229B1008340C3 /* ProdutoDetalhesViewController.m */; };
 		F97C2BEC1D722E29008340C3 /* ClassificadosStoreBoard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F97C2BEB1D722E29008340C3 /* ClassificadosStoreBoard.storyboard */; };
+		F994435B1D8CCE1F0099D152 /* CorrespondenciaStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F994435A1D8CCE1F0099D152 /* CorrespondenciaStoryboard.storyboard */; };
 		F9C259C21D5A98FF00CF9DF3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F9C259C11D5A98FF00CF9DF3 /* main.m */; };
 		F9C259C51D5A98FF00CF9DF3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F9C259C41D5A98FF00CF9DF3 /* AppDelegate.m */; };
 		F9C259C81D5A98FF00CF9DF3 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F9C259C71D5A98FF00CF9DF3 /* ViewController.m */; };
@@ -134,6 +135,7 @@
 		F97C2BE71D7229B1008340C3 /* ProdutoDetalhesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProdutoDetalhesViewController.h; sourceTree = "<group>"; };
 		F97C2BE81D7229B1008340C3 /* ProdutoDetalhesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProdutoDetalhesViewController.m; sourceTree = "<group>"; };
 		F97C2BEB1D722E29008340C3 /* ClassificadosStoreBoard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ClassificadosStoreBoard.storyboard; sourceTree = "<group>"; };
+		F994435A1D8CCE1F0099D152 /* CorrespondenciaStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = CorrespondenciaStoryboard.storyboard; sourceTree = "<group>"; };
 		F9C259BD1D5A98FF00CF9DF3 /* gescon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = gescon.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F9C259C11D5A98FF00CF9DF3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		F9C259C31D5A98FF00CF9DF3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -238,6 +240,24 @@
 			name = Classificados;
 			sourceTree = "<group>";
 		};
+		F99443591D8CCDE80099D152 /* Correspondencia */ = {
+			isa = PBXGroup;
+			children = (
+				F90362EE1D88FCC200BBF2A2 /* CorrespondenciaTableViewController.h */,
+				F90362EF1D88FCC200BBF2A2 /* CorrespondenciaTableViewController.m */,
+				F90362F11D88FCEC00BBF2A2 /* CorrespondenciaTableViewCell.h */,
+				F90362F21D88FCEC00BBF2A2 /* CorrespondenciaTableViewCell.m */,
+				F90362F41D88FD1200BBF2A2 /* NovaCorrespondenciaViewController.h */,
+				F90362F51D88FD1200BBF2A2 /* NovaCorrespondenciaViewController.m */,
+				F90362F71D88FD3300BBF2A2 /* Correspondencia.h */,
+				F90362F81D88FD3300BBF2A2 /* Correspondencia.m */,
+				F90362FA1D8904B700BBF2A2 /* ShowCorrespondenciaViewController.h */,
+				F90362FB1D8904B700BBF2A2 /* ShowCorrespondenciaViewController.m */,
+				F994435A1D8CCE1F0099D152 /* CorrespondenciaStoryboard.storyboard */,
+			);
+			name = Correspondencia;
+			sourceTree = "<group>";
+		};
 		F9C259B41D5A98FF00CF9DF3 = {
 			isa = PBXGroup;
 			children = (
@@ -258,6 +278,7 @@
 		F9C259BF1D5A98FF00CF9DF3 /* gescon */ = {
 			isa = PBXGroup;
 			children = (
+				F99443591D8CCDE80099D152 /* Correspondencia */,
 				F90362EB1D88F52600BBF2A2 /* Aviso_Chegada */,
 				F97C2BEA1D722DFF008340C3 /* Classificados */,
 				F912A2CF1D68A4F700136202 /* Forum */,
@@ -270,16 +291,6 @@
 				F95A66051D60E76C0051C84A /* LoginViewController.m */,
 				F970A4891D63D0510090032B /* HomeViewController.h */,
 				F970A48A1D63D0510090032B /* HomeViewController.m */,
-				F90362EE1D88FCC200BBF2A2 /* CorrespondenciaTableViewController.h */,
-				F90362EF1D88FCC200BBF2A2 /* CorrespondenciaTableViewController.m */,
-				F90362F11D88FCEC00BBF2A2 /* CorrespondenciaTableViewCell.h */,
-				F90362F21D88FCEC00BBF2A2 /* CorrespondenciaTableViewCell.m */,
-				F90362F41D88FD1200BBF2A2 /* NovaCorrespondenciaViewController.h */,
-				F90362F51D88FD1200BBF2A2 /* NovaCorrespondenciaViewController.m */,
-				F90362F71D88FD3300BBF2A2 /* Correspondencia.h */,
-				F90362F81D88FD3300BBF2A2 /* Correspondencia.m */,
-				F90362FA1D8904B700BBF2A2 /* ShowCorrespondenciaViewController.h */,
-				F90362FB1D8904B700BBF2A2 /* ShowCorrespondenciaViewController.m */,
 				F9C259C91D5A98FF00CF9DF3 /* Main.storyboard */,
 				F9C259CC1D5A98FF00CF9DF3 /* Assets.xcassets */,
 				F9C259CE1D5A98FF00CF9DF3 /* LaunchScreen.storyboard */,
@@ -359,6 +370,7 @@
 				F9C259D01D5A98FF00CF9DF3 /* LaunchScreen.storyboard in Resources */,
 				F9C259CD1D5A98FF00CF9DF3 /* Assets.xcassets in Resources */,
 				F9C259CB1D5A98FF00CF9DF3 /* Main.storyboard in Resources */,
+				F994435B1D8CCE1F0099D152 /* CorrespondenciaStoryboard.storyboard in Resources */,
 				F90362ED1D88F55800BBF2A2 /* AvisoChegadaStoryboard.storyboard in Resources */,
 				F912A2E01D68F03F00136202 /* ForumStoryboard.storyboard in Resources */,
 				F97C2BEC1D722E29008340C3 /* ClassificadosStoreBoard.storyboard in Resources */,

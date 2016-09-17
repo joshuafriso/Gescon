@@ -29,9 +29,6 @@
     return @"objectId";
 }
 
--(NSString *)description{
-    return self.detalhesCorrespondencia;
-}
 -(void)encodeWithCoder:(NSCoder *)encoder
 {
     //Encode the properties of the object
@@ -49,9 +46,5 @@
     }
     return self;
 }
-
-
-
-
 
 @end
