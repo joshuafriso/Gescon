@@ -9,6 +9,7 @@
 #import "TopicoTableViewController.h"
 #import "TopicosTableViewCell.h"
 #import "Forum.h"
+#import "NewComentTableViewCell.h"
 
 @interface TopicoTableViewController ()
 
@@ -29,6 +30,9 @@
 
     self.tableView.rowHeight = UITableViewAutomaticDimension;
     self.tableView.estimatedRowHeight = 100;
+}
+- (IBAction)botaoAddComent:(id)sender {
+    
 }
 
 - (void)didReceiveMemoryWarning {
@@ -58,7 +62,6 @@
         cell.nomeUsuarioDiscussao.text = msg.usuarioLogado;
         cell.detalhesDicussao.text = msg.text;
         cell.dataPostagemDiscussao.text = msg.dataPostagem.description;
-        
     }
     
     return cell;

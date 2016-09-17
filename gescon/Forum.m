@@ -72,5 +72,30 @@
     
     return msg;
 }
+-(void) inserirComentario: (NSString *) texto eUsuarioLogado: (NSString *) usuario eData: (NSDate *) data {
+    
+    NovoComent *coment = [[NovoComent alloc] init];
+    coment.detalhesComent = texto;
+    coment.usuarioLogado = usuario;
+    coment.dataPostagem = data;
+    coment.forumId = self.objectId;
+    
+    RLMRealm *realmForum = [RLMRealm defaultRealm];
+    
+    [realmForum beginWriteTransaction];
+    [realmForum addObject:coment];
+    [realmForum commitWriteTransaction];
+    
+}
+
+-(RLMResults<NovoComent *> *) getComentario {
+    
+    NSPredicate *pred = [NSPredicate predicateWithFormat:@"forumId = %d",
+                         self.objectId];
+    
+    RLMResults<NovoComent *> *coment = [NovoComent objectsWithPredicate:pred];
+    
+    return coment;
+}
 
 @end

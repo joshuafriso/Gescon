@@ -96,6 +96,12 @@
                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="Lorem ipsum" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sgI-i7-Kij">
+                                            <rect key="frame" x="8" y="30" width="584" height="0.0"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="Data" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F9i-bn-FrE">
                                             <rect key="frame" x="512" y="8" width="80" height="17"/>
                                             <constraints>
@@ -110,12 +116,6 @@
                                                     <exclude reference="9vE-DL-ZGZ"/>
                                                 </mask>
                                             </variation>
-                                        </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="Lorem ipsum" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sgI-i7-Kij">
-                                            <rect key="frame" x="8" y="30" width="584" height="0.0"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                            <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
                                     <constraints>
@@ -135,6 +135,83 @@
                                     <outlet property="dataPostagemDiscussao" destination="F9i-bn-FrE" id="u9g-wO-gmQ"/>
                                     <outlet property="detalhesDicussao" destination="sgI-i7-Kij" id="vwS-6Z-gHP"/>
                                     <outlet property="nomeUsuarioDiscussao" destination="41Y-J0-LHR" id="HEz-hw-FrZ"/>
+                                </connections>
+                            </tableViewCell>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="NewComentCell" id="sb5-YP-fYR" customClass="NewComentTableViewCell">
+                                <rect key="frame" x="0.0" y="136" width="600" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="sb5-YP-fYR" id="aCc-RB-Nvj">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Nome" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n70-GR-L4X">
+                                            <rect key="frame" x="13" y="13" width="489" height="16"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Data" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hVz-5e-Vyv">
+                                            <rect key="frame" x="507" y="13" width="80" height="16"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="80" id="Ic7-cm-REZ"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XJs-Si-Xoi">
+                                            <rect key="frame" x="13" y="31" width="574" height="89"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="bottomMargin" secondItem="hVz-5e-Vyv" secondAttribute="bottom" constant="91" id="5lM-ES-kXt"/>
+                                        <constraint firstItem="n70-GR-L4X" firstAttribute="leading" secondItem="aCc-RB-Nvj" secondAttribute="leadingMargin" constant="5" id="9nC-05-VLf"/>
+                                        <constraint firstItem="n70-GR-L4X" firstAttribute="top" secondItem="aCc-RB-Nvj" secondAttribute="topMargin" constant="5" id="CqH-Xf-yRH"/>
+                                        <constraint firstItem="hVz-5e-Vyv" firstAttribute="leading" secondItem="n70-GR-L4X" secondAttribute="trailing" constant="5" id="D6V-rp-ARS"/>
+                                        <constraint firstItem="hVz-5e-Vyv" firstAttribute="bottom" secondItem="n70-GR-L4X" secondAttribute="bottom" id="Fad-fe-L9B"/>
+                                        <constraint firstItem="hVz-5e-Vyv" firstAttribute="top" secondItem="aCc-RB-Nvj" secondAttribute="topMargin" constant="5" id="KcJ-qj-oYD"/>
+                                        <constraint firstItem="XJs-Si-Xoi" firstAttribute="leading" secondItem="n70-GR-L4X" secondAttribute="leading" id="UQ1-4n-JS4"/>
+                                        <constraint firstItem="hVz-5e-Vyv" firstAttribute="top" secondItem="n70-GR-L4X" secondAttribute="top" id="a86-9A-Fid"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="hVz-5e-Vyv" secondAttribute="trailing" constant="5" id="fDf-Tn-ssQ"/>
+                                        <constraint firstItem="XJs-Si-Xoi" firstAttribute="top" secondItem="n70-GR-L4X" secondAttribute="bottom" constant="5" id="pxg-u9-8Lh"/>
+                                        <constraint firstItem="hVz-5e-Vyv" firstAttribute="trailing" secondItem="XJs-Si-Xoi" secondAttribute="trailing" id="qkv-jv-DcQ"/>
+                                        <constraint firstAttribute="bottom" secondItem="XJs-Si-Xoi" secondAttribute="bottom" constant="5" id="ukH-Ku-bw1"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="dataNewComentLabel" destination="hVz-5e-Vyv" id="OyK-5A-Dsx"/>
+                                    <outlet property="detalhesNewComentLabel" destination="XJs-Si-Xoi" id="NKZ-GV-8Oz"/>
+                                    <outlet property="nomeNewComentLabel" destination="n70-GR-L4X" id="5MS-q9-nN6"/>
+                                </connections>
+                            </tableViewCell>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="AddComentCell" id="QAY-Rz-ceA" customClass="AddComentTableViewCell">
+                                <rect key="frame" x="0.0" y="180" width="600" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="QAY-Rz-ceA" id="Ddy-zs-JSS">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ib5-s4-GGH">
+                                            <rect key="frame" x="8" y="8" width="584" height="27"/>
+                                            <state key="normal" title="Adicionar comentário"/>
+                                            <connections>
+                                                <action selector="botaoAddComent:" destination="n6z-HG-uM0" eventType="touchUpInside" id="5Ny-jA-AXu"/>
+                                                <segue destination="cdC-Tk-Rkj" kind="presentation" id="gKI-tg-93L"/>
+                                            </connections>
+                                        </button>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="bottomMargin" secondItem="Ib5-s4-GGH" secondAttribute="bottom" id="01G-VN-F6R"/>
+                                        <constraint firstItem="Ib5-s4-GGH" firstAttribute="leading" secondItem="Ddy-zs-JSS" secondAttribute="leadingMargin" id="QP3-fE-zVN"/>
+                                        <constraint firstItem="Ib5-s4-GGH" firstAttribute="top" secondItem="Ddy-zs-JSS" secondAttribute="topMargin" id="hFL-aj-NIY"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="Ib5-s4-GGH" secondAttribute="trailing" id="nDG-Pf-v78"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="botaoAddNewComent" destination="Ib5-s4-GGH" id="iPh-Bi-pG9"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -164,6 +241,69 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EAQ-H7-vjL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2238" y="-94"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="tDi-tM-HzZ">
+            <objects>
+                <navigationController id="cdC-Tk-Rkj" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="7gv-31-uFQ">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="8Vg-8h-vso" kind="relationship" relationship="rootViewController" id="teZ-m5-6jh"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="a8f-ZU-pxv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2238" y="616"/>
+        </scene>
+        <!--Inserir Comentário-->
+        <scene sceneID="aPQ-9K-ptH">
+            <objects>
+                <viewController id="8Vg-8h-vso" customClass="AddNewComentViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="PDB-su-r4Q"/>
+                        <viewControllerLayoutGuide type="bottom" id="s7u-Dr-FWb"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="t7x-A6-9M8">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Cn4-3E-BJx">
+                                <rect key="frame" x="5" y="72" width="590" height="521"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Cn4-3E-BJx" firstAttribute="leading" secondItem="t7x-A6-9M8" secondAttribute="leading" constant="5" id="CSd-be-plS"/>
+                            <constraint firstAttribute="trailing" secondItem="Cn4-3E-BJx" secondAttribute="trailing" constant="5" id="L82-ci-p7f"/>
+                            <constraint firstItem="Cn4-3E-BJx" firstAttribute="top" secondItem="PDB-su-r4Q" secondAttribute="bottom" constant="10" id="VCv-Td-loT"/>
+                            <constraint firstItem="s7u-Dr-FWb" firstAttribute="top" secondItem="Cn4-3E-BJx" secondAttribute="bottom" constant="5" id="Z3X-ae-kkB"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Inserir Comentário" id="r3m-Tu-oyf">
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="sFc-Ja-TSP">
+                            <connections>
+                                <action selector="botaoCancelNewComent:" destination="8Vg-8h-vso" id="ljY-Ml-yXe"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="1qP-R4-nDR">
+                            <connections>
+                                <action selector="botaoDoneNewComent:" destination="8Vg-8h-vso" id="CYn-nC-9pR"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="novoComentLabel" destination="Cn4-3E-BJx" id="vNu-gB-LfH"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xRC-lJ-2QV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2965" y="616"/>
         </scene>
         <!--Nova Discussão View Controller-->
         <scene sceneID="Cnd-NU-4rb">
