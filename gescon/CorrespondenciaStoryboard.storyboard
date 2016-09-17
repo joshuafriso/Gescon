@@ -25,20 +25,20 @@
         <!--Correspondência-->
         <scene sceneID="RnY-3x-n2u">
             <objects>
-                <tableViewController title="Correspondência" id="VBa-Rf-3ki" sceneMemberID="viewController">
+                <tableViewController title="Correspondência" id="VBa-Rf-3ki" customClass="CorrespondenciaTableViewController" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="6K6-8t-fPF">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="CorrespoCell" textLabel="xSn-iz-82P" style="IBUITableViewCellStyleDefault" id="Htk-IN-ICt" customClass="CorrespondenciaTableViewCell">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="CorrespoCell" textLabel="Cgn-uB-udg" style="IBUITableViewCellStyleDefault" id="bUw-G0-8WF" customClass="CorrespondenciaTableViewCell">
                                 <rect key="frame" x="0.0" y="92" width="600" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Htk-IN-ICt" id="QcP-PJ-ecR">
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="bUw-G0-8WF" id="4RQ-dB-ICh">
                                     <rect key="frame" x="0.0" y="0.0" width="567" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Nome" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="xSn-iz-82P">
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Cgn-uB-udg">
                                             <rect key="frame" x="15" y="0.0" width="550" height="43"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="16"/>
@@ -48,10 +48,8 @@
                                     </subviews>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <outlet property="nomeDestino" destination="xSn-iz-82P" id="s3c-NB-Prl"/>
-                                    <segue destination="n7v-I8-x0d" kind="show" identifier="SetaCorrespShow" id="H5D-sg-WKy">
-                                        <nil key="action"/>
-                                    </segue>
+                                    <outlet property="nomeDestino" destination="Cgn-uB-udg" id="7BB-lQ-Ztw"/>
+                                    <segue destination="n7v-I8-x0d" kind="show" identifier="SetaCorrespShow" id="lCM-YE-SSp"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
