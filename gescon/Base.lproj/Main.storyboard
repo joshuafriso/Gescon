@@ -38,8 +38,8 @@
                                     <action selector="botaoEntrar:" destination="Tpd-8B-4Rg" eventType="touchUpInside" id="aHp-vo-hbU"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo" translatesAutoresizingMaskIntoConstraints="NO" id="fqy-2t-eNN">
-                                <rect key="frame" x="160" y="30" width="280" height="180"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="Logo" translatesAutoresizingMaskIntoConstraints="NO" id="fqy-2t-eNN">
+                                <rect key="frame" x="160" y="28" width="280" height="180"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="180" id="JBh-bw-Pfd"/>
                                 </constraints>
