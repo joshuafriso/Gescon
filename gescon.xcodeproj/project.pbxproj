@@ -45,7 +45,6 @@
 		F97C2BE91D7229B1008340C3 /* ProdutoDetalhesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F97C2BE81D7229B1008340C3 /* ProdutoDetalhesViewController.m */; };
 		F97C2BEC1D722E29008340C3 /* ClassificadosStoreBoard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F97C2BEB1D722E29008340C3 /* ClassificadosStoreBoard.storyboard */; };
 		F994435B1D8CCE1F0099D152 /* CorrespondenciaStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F994435A1D8CCE1F0099D152 /* CorrespondenciaStoryboard.storyboard */; };
-		F994435E1D8DC7390099D152 /* AddComentTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F994435D1D8DC7390099D152 /* AddComentTableViewCell.m */; };
 		F99443611D8DD5460099D152 /* NewComentTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F99443601D8DD5460099D152 /* NewComentTableViewCell.m */; };
 		F99443641D8DDC370099D152 /* AddNewComentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F99443631D8DDC370099D152 /* AddNewComentViewController.m */; };
 		F99443671D8DF7A80099D152 /* NovoComent.m in Sources */ = {isa = PBXBuildFile; fileRef = F99443661D8DF7A80099D152 /* NovoComent.m */; };
@@ -140,8 +139,6 @@
 		F97C2BE81D7229B1008340C3 /* ProdutoDetalhesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProdutoDetalhesViewController.m; sourceTree = "<group>"; };
 		F97C2BEB1D722E29008340C3 /* ClassificadosStoreBoard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ClassificadosStoreBoard.storyboard; sourceTree = "<group>"; };
 		F994435A1D8CCE1F0099D152 /* CorrespondenciaStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = CorrespondenciaStoryboard.storyboard; sourceTree = "<group>"; };
-		F994435C1D8DC7390099D152 /* AddComentTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddComentTableViewCell.h; sourceTree = "<group>"; };
-		F994435D1D8DC7390099D152 /* AddComentTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddComentTableViewCell.m; sourceTree = "<group>"; };
 		F994435F1D8DD5460099D152 /* NewComentTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewComentTableViewCell.h; sourceTree = "<group>"; };
 		F99443601D8DD5460099D152 /* NewComentTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewComentTableViewCell.m; sourceTree = "<group>"; };
 		F99443621D8DDC370099D152 /* AddNewComentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddNewComentViewController.h; sourceTree = "<group>"; };
@@ -225,8 +222,6 @@
 				F912A2DD1D68D4BD00136202 /* TopicosTableViewCell.m */,
 				C55AEBEE1D6D2C9700F55425 /* Mensagem.h */,
 				C55AEBEF1D6D2C9700F55425 /* Mensagem.m */,
-				F994435C1D8DC7390099D152 /* AddComentTableViewCell.h */,
-				F994435D1D8DC7390099D152 /* AddComentTableViewCell.m */,
 				F994435F1D8DD5460099D152 /* NewComentTableViewCell.h */,
 				F99443601D8DD5460099D152 /* NewComentTableViewCell.m */,
 				F99443621D8DDC370099D152 /* AddNewComentViewController.h */,
@@ -282,7 +277,7 @@
 			isa = PBXGroup;
 			children = (
 				F93D94C21D66777000DFF019 /* Realm.framework */,
-				F9C259BF1D5A98FF00CF9DF3 /* gescon */,
+				F9C259BF1D5A98FF00CF9DF3 /* Gescon */,
 				F9C259BE1D5A98FF00CF9DF3 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -295,7 +290,7 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		F9C259BF1D5A98FF00CF9DF3 /* gescon */ = {
+		F9C259BF1D5A98FF00CF9DF3 /* Gescon */ = {
 			isa = PBXGroup;
 			children = (
 				F99443591D8CCDE80099D152 /* Correspondencia */,
@@ -317,6 +312,7 @@
 				F9C259D11D5A98FF00CF9DF3 /* Info.plist */,
 				F9C259C01D5A98FF00CF9DF3 /* Supporting Files */,
 			);
+			name = Gescon;
 			path = gescon;
 			sourceTree = "<group>";
 		};
@@ -425,7 +421,6 @@
 				F97C2BE91D7229B1008340C3 /* ProdutoDetalhesViewController.m in Sources */,
 				F90362F01D88FCC200BBF2A2 /* CorrespondenciaTableViewController.m in Sources */,
 				F90362EA1D88E19900BBF2A2 /* ShowAvisoViewController.m in Sources */,
-				F994435E1D8DC7390099D152 /* AddComentTableViewCell.m in Sources */,
 				F912A2CE1D68A4ED00136202 /* ForumTableViewController.m in Sources */,
 				F90362F91D88FD3300BBF2A2 /* Correspondencia.m in Sources */,
 				F95A66061D60E76C0051C84A /* LoginViewController.m in Sources */,

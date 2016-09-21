@@ -29,7 +29,7 @@
     Forum *forumNova = [[Forum alloc] initWithTema:_temaNovaDiscussao.text];
     forumNova.importancia = (int)_importanciaNovaDiscussao.selectedSegmentIndex;
     
-    [forumNova inserirMensagemComTexto:_detalhesNovaDiscussao.text eUsuarioLogado:[[NSUserDefaults standardUserDefaults] objectForKey:@"nomeUsuario"] eData:[NSDate date]];
+    [forumNova inserirMensagemComTexto:_detalhesNovaDiscussao.text eUsuarioLogado:[[NSUserDefaults standardUserDefaults] objectForKey:@"nomeUsuario"] eData:[NSDate date] eTipo:@"Topico"];
     
     RLMRealm *realmForum = [RLMRealm defaultRealm];
     

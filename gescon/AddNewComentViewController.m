@@ -8,7 +8,7 @@
 
 #import "AddNewComentViewController.h"
 #import "AppDelegate.h"
-#import "Forum.h"
+#import "NovoComent.h"
 
 @interface AddNewComentViewController ()
 
@@ -27,14 +27,14 @@
 
 - (IBAction)botaoDoneNewComent:(id)sender {
     
-    Forum *forumNewcoment = [[Forum alloc] initWithTema:nil];
+    NovoComent *novoComent = [[NovoComent alloc] init];
     
-    [forumNewcoment inserirComentario:_novoComentLabel.text eUsuarioLogado:[[NSUserDefaults standardUserDefaults]objectForKey:@"nomeUsuario"] eData:[NSDate date]];
+    [novoComent inserirComentario:_novoComentLabel.text eUserComent:[[NSUserDefaults standardUserDefaults]objectForKey:@"nomeUsuario"] eDataPost:[NSDate date] eTipo:@"Coment"];
     
     RLMRealm *realmComent = [RLMRealm defaultRealm];
     
     [realmComent beginWriteTransaction];
-    [realmComent addObject:forumNewcoment];
+    [realmComent addObject:novoComent];
     [realmComent commitWriteTransaction];
     
     [self dismissViewControllerAnimated:YES completion:^{

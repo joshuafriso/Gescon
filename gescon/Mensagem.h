@@ -15,5 +15,6 @@
 @property int forumId;
 @property NSString *usuarioLogado;
 @property NSDate *dataPostagem;
+@property NSString *tipoMensagem;
 
 @end

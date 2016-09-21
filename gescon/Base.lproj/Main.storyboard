@@ -38,9 +38,10 @@
                                     <action selector="botaoEntrar:" destination="Tpd-8B-4Rg" eventType="touchUpInside" id="aHp-vo-hbU"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="Logo" translatesAutoresizingMaskIntoConstraints="NO" id="fqy-2t-eNN">
-                                <rect key="frame" x="160" y="28" width="280" height="180"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo" translatesAutoresizingMaskIntoConstraints="NO" id="fqy-2t-eNN">
+                                <rect key="frame" x="155" y="30" width="290" height="180"/>
                                 <constraints>
+                                    <constraint firstAttribute="width" constant="290" id="CDd-Gs-dql"/>
                                     <constraint firstAttribute="height" constant="180" id="JBh-bw-Pfd"/>
                                 </constraints>
                             </imageView>
@@ -71,6 +72,8 @@
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
+                                <exclude reference="Fsn-1b-X9l"/>
+                                <exclude reference="oXl-Iq-WPh"/>
                                 <exclude reference="120-cr-ske"/>
                                 <exclude reference="B1C-bX-E3E"/>
                                 <exclude reference="BHQ-1H-9fB"/>
@@ -278,6 +281,6 @@
     </scenes>
     <resources>
         <image name="Home" width="32" height="32"/>
-        <image name="Logo" width="125" height="125"/>
+        <image name="Logo" width="89" height="45"/>
     </resources>
 </document>

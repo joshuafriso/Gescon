@@ -15,5 +15,10 @@
 @property int forumId;
 @property NSString *usuarioLogado;
 @property NSDate *dataPostagem;
+@property NSString *tipoComent;
+
+-(void) inserirComentario: (NSString *) detalhes eUserComent: (NSString *) userComent eDataPost: (NSDate *) dataPost eTipo: (NSString *) typeComent;
+-(RLMResults<NovoComent *> *) getComent;
+
 
 @end

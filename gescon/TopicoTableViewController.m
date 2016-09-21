@@ -21,6 +21,7 @@
     [super viewDidLoad];
     
     self.arrayTopicoDetalhes = [self.forum getMensagens];
+    self.arrayComentarios = [NovoComent allObjects];
     
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
@@ -30,9 +31,6 @@
 
     self.tableView.rowHeight = UITableViewAutomaticDimension;
     self.tableView.estimatedRowHeight = 100;
-}
-- (IBAction)botaoAddComent:(id)sender {
-    
 }
 
 - (void)didReceiveMemoryWarning {
@@ -47,23 +45,62 @@
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return _arrayTopicoDetalhes.count;
+    Mensagem *msg;
+    NovoComent *coment;
+    
+    int i, j,count;
+    count = 0;
+    for( i = 0; i < _arrayTopicoDetalhes.count; i++){
+        if(![_arrayTopicoDetalhes isEqual:nil]){
+            msg = _arrayTopicoDetalhes[i];
+            if ([msg.tipoMensagem isEqualToString:@"Topico"]) {
+                count++ ;
+            }
+        }
+    }
+    for (j = 0; j < _arrayComentarios.count; j++) {
+        if(![_arrayComentarios isEqual:nil]){
+            coment  = _arrayComentarios[j];
+            if ([coment.tipoComent isEqualToString: @"Coment"]){
+                count++ ;
+            }
+        }
+
+    }
+    return count;
 }
 
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     
-    TopicosTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"MensagemTopicoForum" forIndexPath:indexPath];
+    UITableViewCell *cell;
     
     Mensagem *msg = _arrayTopicoDetalhes[indexPath.row];
     
-    if(msg.forumId == _forum.objectId){
-        
-        cell.nomeUsuarioDiscussao.text = msg.usuarioLogado;
-        cell.detalhesDicussao.text = msg.text;
-        cell.dataPostagemDiscussao.text = msg.dataPostagem.description;
-    }
+    NovoComent *coment = _arrayComentarios[indexPath.row];
     
+    NSLog(@"%@", msg.tipoMensagem);
+    
+    if ([msg.tipoMensagem  isEqual: @"Topico"]) {
+        TopicosTableViewCell *cellTopico = [tableView dequeueReusableCellWithIdentifier:@"MensagemTopicoForum" forIndexPath:indexPath];
+        
+        if(msg.forumId == _forum.objectId){
+            
+            cellTopico.nomeUsuarioDiscussao.text = msg.usuarioLogado;
+            cellTopico.detalhesDicussao.text = msg.text;
+            cellTopico.dataPostagemDiscussao.text = msg.dataPostagem.description;
+            cell = cellTopico;
+        }
+    }else if([coment.tipoComent isEqual: @"Coment"] && coment.forumId == msg.forumId){
+        NewComentTableViewCell *cellComent = [tableView dequeueReusableCellWithIdentifier:@"NewComentCell" forIndexPath:indexPath];
+        if (msg.forumId == _forum.objectId) {
+            
+            cellComent.nomeNewComentLabel.text = coment.usuarioLogado;
+            cellComent.detalhesNewComentLabel.text = coment.detalhesComent;
+            cellComent.dataNewComentLabel.text = coment.dataPostagem.description;
+            cell = cellComent;
+        }
+    }
     return cell;
 }
 

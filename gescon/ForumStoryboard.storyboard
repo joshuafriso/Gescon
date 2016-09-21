@@ -187,40 +187,19 @@
                                     <outlet property="nomeNewComentLabel" destination="n70-GR-L4X" id="5MS-q9-nN6"/>
                                 </connections>
                             </tableViewCell>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="AddComentCell" id="QAY-Rz-ceA" customClass="AddComentTableViewCell">
-                                <rect key="frame" x="0.0" y="180" width="600" height="44"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="QAY-Rz-ceA" id="Ddy-zs-JSS">
-                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                    <subviews>
-                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ib5-s4-GGH">
-                                            <rect key="frame" x="8" y="8" width="584" height="27"/>
-                                            <state key="normal" title="Adicionar comentário"/>
-                                            <connections>
-                                                <action selector="botaoAddComent:" destination="n6z-HG-uM0" eventType="touchUpInside" id="5Ny-jA-AXu"/>
-                                                <segue destination="cdC-Tk-Rkj" kind="presentation" id="gKI-tg-93L"/>
-                                            </connections>
-                                        </button>
-                                    </subviews>
-                                    <constraints>
-                                        <constraint firstAttribute="bottomMargin" secondItem="Ib5-s4-GGH" secondAttribute="bottom" id="01G-VN-F6R"/>
-                                        <constraint firstItem="Ib5-s4-GGH" firstAttribute="leading" secondItem="Ddy-zs-JSS" secondAttribute="leadingMargin" id="QP3-fE-zVN"/>
-                                        <constraint firstItem="Ib5-s4-GGH" firstAttribute="top" secondItem="Ddy-zs-JSS" secondAttribute="topMargin" id="hFL-aj-NIY"/>
-                                        <constraint firstAttribute="trailingMargin" secondItem="Ib5-s4-GGH" secondAttribute="trailing" id="nDG-Pf-v78"/>
-                                    </constraints>
-                                </tableViewCellContentView>
-                                <connections>
-                                    <outlet property="botaoAddNewComent" destination="Ib5-s4-GGH" id="iPh-Bi-pG9"/>
-                                </connections>
-                            </tableViewCell>
                         </prototypes>
                         <connections>
                             <outlet property="dataSource" destination="n6z-HG-uM0" id="JAm-vY-ZwY"/>
                             <outlet property="delegate" destination="n6z-HG-uM0" id="Xcd-Ia-8Qv"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Tópico" id="mzv-Aw-cOt"/>
+                    <navigationItem key="navigationItem" title="Tópico" id="mzv-Aw-cOt">
+                        <barButtonItem key="rightBarButtonItem" title="Comentar" id="Atm-z0-eKW">
+                            <connections>
+                                <segue destination="cdC-Tk-Rkj" kind="presentation" id="Pbc-sJ-ydw"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0eE-Rw-HEK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -270,7 +249,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Cn4-3E-BJx">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" keyboardDismissMode="interactive" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="Cn4-3E-BJx">
                                 <rect key="frame" x="5" y="72" width="590" height="521"/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>

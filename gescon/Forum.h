@@ -17,10 +17,9 @@
 @property int importancia;
 
 -(instancetype) initWithTema: (NSString *) tema;
--(void) inserirMensagemComTexto: (NSString *) texto eUsuarioLogado: (NSString *) usuario eData: (NSDate *) data;
--(void) inserirComentario: (NSString *) texto eUsuarioLogado: (NSString *) usuario eData: (NSDate *) data;
+-(void) inserirMensagemComTexto: (NSString *) texto eUsuarioLogado: (NSString *) usuario eData: (NSDate *) data eTipo:(NSString *) type;
 -(RLMResults<Mensagem *> *) getMensagens;
--(RLMResults<NovoComent *> *) getComentario;
+
 
 @end
 
