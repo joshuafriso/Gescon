@@ -10,6 +10,7 @@
 #import "TopicosTableViewCell.h"
 #import "Forum.h"
 #import "NewComentTableViewCell.h"
+#import "NovoComent.h"
 
 @interface TopicoTableViewController ()
 
@@ -71,37 +72,34 @@
 }
 
 
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    
-    UITableViewCell *cell;
-    
-    Mensagem *msg = _arrayTopicoDetalhes[indexPath.row];
-    
-    NovoComent *coment = _arrayComentarios[indexPath.row];
-    
-    NSLog(@"%@", msg.tipoMensagem);
-    
-    if ([msg.tipoMensagem  isEqual: @"Topico"]) {
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
+
+    if (indexPath.row == 0) {
         TopicosTableViewCell *cellTopico = [tableView dequeueReusableCellWithIdentifier:@"MensagemTopicoForum" forIndexPath:indexPath];
-        
+        Mensagem *msg = _arrayTopicoDetalhes[indexPath.row];
         if(msg.forumId == _forum.objectId){
-            
+        
             cellTopico.nomeUsuarioDiscussao.text = msg.usuarioLogado;
             cellTopico.detalhesDicussao.text = msg.text;
             cellTopico.dataPostagemDiscussao.text = msg.dataPostagem.description;
-            cell = cellTopico;
+                    
         }
-    }else if([coment.tipoComent isEqual: @"Coment"] && coment.forumId == msg.forumId){
+        return cellTopico;
+    }else{
+        NSIndexPath *newIndexPath = [NSIndexPath indexPathForRow:indexPath.row-1 inSection:indexPath.section];
+        NovoComent *coment = _arrayComentarios[newIndexPath.row];
         NewComentTableViewCell *cellComent = [tableView dequeueReusableCellWithIdentifier:@"NewComentCell" forIndexPath:indexPath];
-        if (msg.forumId == _forum.objectId) {
-            
+        if (coment.forumId == _forum.objectId) {
+        
             cellComent.nomeNewComentLabel.text = coment.usuarioLogado;
             cellComent.detalhesNewComentLabel.text = coment.detalhesComent;
             cellComent.dataNewComentLabel.text = coment.dataPostagem.description;
-            cell = cellComent;
+            
         }
-    }
-    return cell;
+        indexPath = [NSIndexPath indexPathForRow:newIndexPath.row+1 inSection:newIndexPath.section];
+        return cellComent;
+     }
+    
 }
 
 

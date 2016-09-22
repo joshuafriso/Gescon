@@ -27,9 +27,14 @@
 
 - (IBAction)botaoDoneNewComent:(id)sender {
     
-    NovoComent *novoComent = [[NovoComent alloc] init];
+    NovoComent *novoComent = [[NovoComent alloc] initWithTipo: @"Coment"];
     
-    [novoComent inserirComentario:_novoComentLabel.text eUserComent:[[NSUserDefaults standardUserDefaults]objectForKey:@"nomeUsuario"] eDataPost:[NSDate date] eTipo:@"Coment"];
+    novoComent.usuarioLogado = [[NSUserDefaults standardUserDefaults]objectForKey:@"nomeUsuario"];
+    novoComent.dataPostagem = [NSDate date];
+    novoComent.detalhesComent = _novoComentLabel.text;
+    novoComent.forumId = self.forum.objectId;
+    
+//    [novoComent inserirComentario:_novoComentLabel.text eUserComent:[[NSUserDefaults standardUserDefaults]objectForKey:@"nomeUsuario"] eDataPost:[NSDate date] eTipo:@"Coment"];
     
     RLMRealm *realmComent = [RLMRealm defaultRealm];
     

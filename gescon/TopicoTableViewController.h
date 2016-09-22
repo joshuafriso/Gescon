@@ -9,7 +9,6 @@
 #import <UIKit/UIKit.h>
 #import <Realm/Realm.h>
 #import "Forum.h"
-#import "NovoComent.h"
 
 @interface TopicoTableViewController : UITableViewController
 
@@ -17,6 +16,5 @@
 @property RLMResults *arrayComentarios;
 
 @property Forum *forum;
-@property NovoComent *novoComent;
 
 @end

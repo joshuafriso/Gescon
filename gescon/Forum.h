@@ -8,7 +8,7 @@
 
 #import <Realm/Realm.h>
 #import "Mensagem.h"
-#import "NovoComent.h"
+
 
 @interface Forum : RLMObject
 
@@ -19,7 +19,6 @@
 -(instancetype) initWithTema: (NSString *) tema;
 -(void) inserirMensagemComTexto: (NSString *) texto eUsuarioLogado: (NSString *) usuario eData: (NSDate *) data eTipo:(NSString *) type;
 -(RLMResults<Mensagem *> *) getMensagens;
-
 
 @end
 
