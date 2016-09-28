@@ -37,6 +37,8 @@
 		F93D94C91D6679CF00DFF019 /* NoticiasTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F93D94C81D6679CF00DFF019 /* NoticiasTableViewController.m */; };
 		F93D94CC1D667D9400DFF019 /* NoticiaTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F93D94CB1D667D9400DFF019 /* NoticiaTableViewCell.m */; };
 		F93D94CF1D6681EA00DFF019 /* Noticia.m in Sources */ = {isa = PBXBuildFile; fileRef = F93D94CE1D6681EA00DFF019 /* Noticia.m */; };
+		F94367BA1D9C85580030CD06 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F94367B91D9C85570030CD06 /* GoogleService-Info.plist */; };
+		F94367BC1D9C86070030CD06 /* Carthage in Resources */ = {isa = PBXBuildFile; fileRef = F94367BB1D9C86070030CD06 /* Carthage */; };
 		F94B87451D67E5C100F73801 /* NoticiaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F94B87441D67E5C100F73801 /* NoticiaViewController.m */; };
 		F94B87481D67E85000F73801 /* NovaNoticiaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F94B87471D67E85000F73801 /* NovaNoticiaViewController.m */; };
 		F95A66061D60E76C0051C84A /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F95A66051D60E76C0051C84A /* LoginViewController.m */; };
@@ -125,6 +127,8 @@
 		F93D94CB1D667D9400DFF019 /* NoticiaTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NoticiaTableViewCell.m; sourceTree = "<group>"; };
 		F93D94CD1D6681EA00DFF019 /* Noticia.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Noticia.h; sourceTree = "<group>"; };
 		F93D94CE1D6681EA00DFF019 /* Noticia.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Noticia.m; sourceTree = "<group>"; };
+		F94367B91D9C85570030CD06 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		F94367BB1D9C86070030CD06 /* Carthage */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Carthage; sourceTree = "<group>"; };
 		F94B87431D67E5C100F73801 /* NoticiaViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NoticiaViewController.h; sourceTree = "<group>"; };
 		F94B87441D67E5C100F73801 /* NoticiaViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NoticiaViewController.m; sourceTree = "<group>"; };
 		F94B87461D67E85000F73801 /* NovaNoticiaViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NovaNoticiaViewController.h; sourceTree = "<group>"; };
@@ -288,6 +292,8 @@
 		F9C259B41D5A98FF00CF9DF3 = {
 			isa = PBXGroup;
 			children = (
+				F94367BB1D9C86070030CD06 /* Carthage */,
+				F94367B91D9C85570030CD06 /* GoogleService-Info.plist */,
 				F91CF2FD1D9B4A7400B79410 /* Firebase.framework */,
 				F91CF2FB1D9B484F00B79410 /* FSCalendar.framework */,
 				F93D94C21D66777000DFF019 /* Realm.framework */,
@@ -399,12 +405,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				F9C259D01D5A98FF00CF9DF3 /* LaunchScreen.storyboard in Resources */,
+				F94367BC1D9C86070030CD06 /* Carthage in Resources */,
 				F9C259CD1D5A98FF00CF9DF3 /* Assets.xcassets in Resources */,
 				F9C259CB1D5A98FF00CF9DF3 /* Main.storyboard in Resources */,
 				F994435B1D8CCE1F0099D152 /* CorrespondenciaStoryboard.storyboard in Resources */,
 				F90362ED1D88F55800BBF2A2 /* AvisoChegadaStoryboard.storyboard in Resources */,
 				F912A2E01D68F03F00136202 /* ForumStoryboard.storyboard in Resources */,
 				F97C2BEC1D722E29008340C3 /* ClassificadosStoreBoard.storyboard in Resources */,
+				F94367BA1D9C85580030CD06 /* GoogleService-Info.plist in Resources */,
 				F912A2CB1D68A1C300136202 /* NoticiaStoryBoard.storyboard in Resources */,
 				F91CF2F31D9A045F00B79410 /* Carthage in Resources */,
 			);

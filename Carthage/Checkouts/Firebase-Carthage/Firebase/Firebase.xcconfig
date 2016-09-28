@@ -1,0 +1,12 @@
+//
+//  Firebase.xcconfig
+//  Firebase
+//
+//  Created by jbrooks on 3/7/16.
+//  Copyright © 2016 jbrooks. All rights reserved.
+//
+
+LIBRARY_SEARCH_PATHS = $(inherited) "${SRCROOT}/Firebase"
+OTHER_LDFLAGS = -ObjC -l"FirebaseStatic" -l"c++" -l"icucore" -framework "CFNetwork" -framework "Security" -framework "SystemConfiguration" -fobjc-arc -fobjc-link-runtime
+
+
