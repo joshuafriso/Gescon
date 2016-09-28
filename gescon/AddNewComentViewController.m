@@ -32,9 +32,8 @@
     novoComent.usuarioLogado = [[NSUserDefaults standardUserDefaults]objectForKey:@"nomeUsuario"];
     novoComent.dataPostagem = [NSDate date];
     novoComent.detalhesComent = _novoComentLabel.text;
-    novoComent.forumId = self.forum.objectId;
+    novoComent.forumId = self.mensagem.forumId;
     
-//    [novoComent inserirComentario:_novoComentLabel.text eUserComent:[[NSUserDefaults standardUserDefaults]objectForKey:@"nomeUsuario"] eDataPost:[NSDate date] eTipo:@"Coment"];
     
     RLMRealm *realmComent = [RLMRealm defaultRealm];
     

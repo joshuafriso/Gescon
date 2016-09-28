@@ -19,6 +19,12 @@
     [super viewDidLoad];
     
 }
+-(BOOL)shouldAutorotate{
+    return NO;
+}
++(NSUInteger)supportedInterfaceOrientations{
+    return UIInterfaceOrientationMaskPortrait+UIInterfaceOrientationMaskPortraitUpsideDown;
+}
 
 - (IBAction)botaoEntrar:(id)sender {
     self.userLogin = _loginLabel.text;
@@ -44,7 +50,6 @@
         
     }
 }
-
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

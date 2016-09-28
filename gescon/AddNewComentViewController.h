@@ -7,12 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "Forum.h"
+#import "Mensagem.h"
 
 @interface AddNewComentViewController : UIViewController
 
 @property (weak, nonatomic) IBOutlet UITextView *novoComentLabel;
 
-@property Forum *forum;
+@property Mensagem *mensagem;
 
 @end

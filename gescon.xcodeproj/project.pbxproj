@@ -27,6 +27,11 @@
 		F912A2DB1D68C73200136202 /* NovaDiscussaoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F912A2DA1D68C73200136202 /* NovaDiscussaoViewController.m */; };
 		F912A2DE1D68D4BD00136202 /* TopicosTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F912A2DD1D68D4BD00136202 /* TopicosTableViewCell.m */; };
 		F912A2E01D68F03F00136202 /* ForumStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F912A2DF1D68F03F00136202 /* ForumStoryboard.storyboard */; };
+		F91CF2F31D9A045F00B79410 /* Carthage in Resources */ = {isa = PBXBuildFile; fileRef = F91CF2F21D9A045F00B79410 /* Carthage */; };
+		F91CF2FC1D9B484F00B79410 /* FSCalendar.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F91CF2FB1D9B484F00B79410 /* FSCalendar.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F91CF2FE1D9B4A7400B79410 /* Firebase.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F91CF2FD1D9B4A7400B79410 /* Firebase.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F91CF2FF1D9B4B5B00B79410 /* Firebase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F91CF2FD1D9B4A7400B79410 /* Firebase.framework */; };
+		F91CF3001D9B4B6B00B79410 /* FSCalendar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F91CF2FB1D9B484F00B79410 /* FSCalendar.framework */; };
 		F93D94C31D66777100DFF019 /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F93D94C21D66777000DFF019 /* Realm.framework */; };
 		F93D94C41D66777100DFF019 /* Realm.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F93D94C21D66777000DFF019 /* Realm.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		F93D94C91D6679CF00DFF019 /* NoticiasTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F93D94C81D6679CF00DFF019 /* NoticiasTableViewController.m */; };
@@ -63,6 +68,8 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				F91CF2FE1D9B4A7400B79410 /* Firebase.framework in Embed Frameworks */,
+				F91CF2FC1D9B484F00B79410 /* FSCalendar.framework in Embed Frameworks */,
 				F93D94C41D66777100DFF019 /* Realm.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
@@ -108,6 +115,9 @@
 		F912A2DC1D68D4BD00136202 /* TopicosTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TopicosTableViewCell.h; sourceTree = "<group>"; };
 		F912A2DD1D68D4BD00136202 /* TopicosTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TopicosTableViewCell.m; sourceTree = "<group>"; };
 		F912A2DF1D68F03F00136202 /* ForumStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ForumStoryboard.storyboard; sourceTree = "<group>"; };
+		F91CF2F21D9A045F00B79410 /* Carthage */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Carthage; path = /Users/joshuafriso/Desktop/gescon/Carthage; sourceTree = "<absolute>"; };
+		F91CF2FB1D9B484F00B79410 /* FSCalendar.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FSCalendar.framework; path = Carthage/Build/iOS/FSCalendar.framework; sourceTree = "<group>"; };
+		F91CF2FD1D9B4A7400B79410 /* Firebase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Firebase.framework; path = Carthage/Build/iOS/Firebase.framework; sourceTree = "<group>"; };
 		F93D94C21D66777000DFF019 /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Realm.framework; sourceTree = "<group>"; };
 		F93D94C71D6679CF00DFF019 /* NoticiasTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NoticiasTableViewController.h; sourceTree = "<group>"; };
 		F93D94C81D6679CF00DFF019 /* NoticiasTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NoticiasTableViewController.m; sourceTree = "<group>"; };
@@ -162,6 +172,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F91CF3001D9B4B6B00B79410 /* FSCalendar.framework in Frameworks */,
+				F91CF2FF1D9B4B5B00B79410 /* Firebase.framework in Frameworks */,
 				F93D94C31D66777100DFF019 /* Realm.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -276,6 +288,8 @@
 		F9C259B41D5A98FF00CF9DF3 = {
 			isa = PBXGroup;
 			children = (
+				F91CF2FD1D9B4A7400B79410 /* Firebase.framework */,
+				F91CF2FB1D9B484F00B79410 /* FSCalendar.framework */,
 				F93D94C21D66777000DFF019 /* Realm.framework */,
 				F9C259BF1D5A98FF00CF9DF3 /* Gescon */,
 				F9C259BE1D5A98FF00CF9DF3 /* Products */,
@@ -392,6 +406,7 @@
 				F912A2E01D68F03F00136202 /* ForumStoryboard.storyboard in Resources */,
 				F97C2BEC1D722E29008340C3 /* ClassificadosStoreBoard.storyboard in Resources */,
 				F912A2CB1D68A1C300136202 /* NoticiaStoryBoard.storyboard in Resources */,
+				F91CF2F31D9A045F00B79410 /* Carthage in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -573,6 +588,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = gescon/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -592,6 +608,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = gescon/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;

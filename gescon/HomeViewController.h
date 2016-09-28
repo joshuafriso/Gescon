@@ -7,13 +7,15 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Realm/Realm.h"
 
-
-@interface HomeViewController : UIViewController
+@interface HomeViewController : UIViewController <UITableViewDataSource, UITableViewDelegate>
 
 
 @property (weak, nonatomic) IBOutlet UILabel *bemVindoLabel;
 
 @property (weak, nonatomic) IBOutlet UITableView *tableViewNoticias;
+
+@property RLMResults *arrayNoticiasHome;
 
 @end

@@ -7,7 +7,8 @@
 //
 
 #import "HomeViewController.h"
-
+#import "Noticia.h"
+#import <Firebase/Firebase.h>
 
 @interface HomeViewController ()
 
@@ -22,6 +23,30 @@
     NSString *mensagemBemvindo = [NSString stringWithFormat:@"Bem-vindo, %@", userName];
     
     self.bemVindoLabel.text = mensagemBemvindo;
+    
+    self.arrayNoticiasHome = [Noticia allObjects];
+    
+    
+}
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    
+    return 4;
+
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+    Noticia *noticiaHome = _arrayNoticiasHome[indexPath.row];
+    
+    NSString *cellIdentifier;
+    UITableViewCell *cell;
+    
+    cellIdentifier = @"NoticiasHomeCell";
+    cell = [tableView dequeueReusableCellWithIdentifier:cellIdentifier forIndexPath:indexPath];
+    cell.textLabel.text = noticiaHome.tituloNovaNoticia;
+    
+    return cell;
     
 }
 
