@@ -8,7 +8,6 @@
 
 #import "HomeViewController.h"
 #import "Noticia.h"
-#import <Firebase/Firebase.h>
 
 @interface HomeViewController ()
 
