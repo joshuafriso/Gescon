@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "Realm/Realm.h"
 
-@interface HomeViewController : UIViewController <UITableViewDataSource, UITableViewDelegate>
+@interface HomeViewController : UIViewController //<UITableViewDataSource, UITableViewDelegate>
 
 
 @property (weak, nonatomic) IBOutlet UILabel *bemVindoLabel;

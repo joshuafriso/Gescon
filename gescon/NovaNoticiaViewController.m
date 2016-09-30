@@ -23,21 +23,33 @@
 - (IBAction)botaoCancelNovaNoticia:(id)sender {
     [self.navigationController dismissViewControllerAnimated:YES completion:nil];
 }
-- (IBAction)botaoDoneNovaNoticia:(id)sender {
+- (IBAction)botaoDoneNovaNoticia:(id)sender{
     
     Noticia *noticia = [[Noticia alloc] initWithTitulo:_tituloNovaNoticia.text];
     
     noticia.descricaoNovaNoticia = _descricaoNovaNoticia.text;
     
-    RLMRealm *realm = [RLMRealm defaultRealm];
+    if(![noticia.tituloNovaNoticia isEqualToString:@"" ] && ![noticia.descricaoNovaNoticia isEqualToString:@""]){
     
-    [realm beginWriteTransaction];
-    [realm addOrUpdateObject:noticia];
-    [realm commitWriteTransaction];
+        RLMRealm *realm = [RLMRealm defaultRealm];
     
-    [self dismissViewControllerAnimated:YES completion: ^{
+        [realm beginWriteTransaction];
+        [realm addOrUpdateObject:noticia];
+        [realm commitWriteTransaction];
+    
+        [self dismissViewControllerAnimated:YES completion: ^{
         
-    }];
+        }];
+    }else{
+        
+        UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"Atenção!!!" message:@"Preencha todos os campos!!!" preferredStyle: UIAlertControllerStyleAlert];
+        UIAlertAction *defaultAction = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDestructive handler:^(UIAlertAction *action) {
+        }];
+        
+        [alert addAction:defaultAction];
+        [self presentViewController:alert animated:YES completion:nil];
+        
+    }
     NSLog(@"Botão salvar noticia precionado");
 }
 

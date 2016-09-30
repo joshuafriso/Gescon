@@ -87,7 +87,11 @@
         
             cellTopico.nomeUsuarioDiscussao.text = msg.usuarioLogado;
             cellTopico.detalhesDicussao.text = msg.text;
-            cellTopico.dataPostagemDiscussao.text = msg.dataPostagem.description;
+            NSDateFormatter *formatterDate = [[NSDateFormatter alloc]init];
+            [formatterDate setDateFormat:@"dd/MM/yyyy"];
+            NSDate *date = msg.dataPostagem;
+            NSString *convertedString = [formatterDate stringFromDate: date];
+            cellTopico.dataPostagemDiscussao.text = convertedString;
                     
         }
         return cellTopico;
@@ -99,7 +103,11 @@
         
             cellComent.nomeNewComentLabel.text = coment.usuarioLogado;
             cellComent.detalhesNewComentLabel.text = coment.detalhesComent;
-            cellComent.dataNewComentLabel.text = coment.dataPostagem.description;
+            NSDateFormatter *formatterDate = [[NSDateFormatter alloc]init];
+            [formatterDate setDateFormat:@"dd/MM/yyyy"];
+            NSDate *date = coment.dataPostagem;
+            NSString *convertedString = [formatterDate stringFromDate: date];
+            cellComent.dataNewComentLabel.text = convertedString;
             
         }
         indexPath = [NSIndexPath indexPathForRow:newIndexPath.row+1 inSection:newIndexPath.section];

@@ -23,31 +23,31 @@
     
     self.bemVindoLabel.text = mensagemBemvindo;
     
-    self.arrayNoticiasHome = [Noticia allObjects];
+    //self.arrayNoticiasHome = [Noticia allObjects];
     
     
 }
 
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    
-    return 4;
-
-}
-
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    
-    Noticia *noticiaHome = _arrayNoticiasHome[indexPath.row];
-    
-    NSString *cellIdentifier;
-    UITableViewCell *cell;
-    
-    cellIdentifier = @"NoticiasHomeCell";
-    cell = [tableView dequeueReusableCellWithIdentifier:cellIdentifier forIndexPath:indexPath];
-    cell.textLabel.text = noticiaHome.tituloNovaNoticia;
-    
-    return cell;
-    
-}
+//- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+//    
+//    return 4;
+//
+//}
+//
+//- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+//    
+//    Noticia *noticiaHome = _arrayNoticiasHome[indexPath.row];
+//    
+//    NSString *cellIdentifier;
+//    UITableViewCell *cell;
+//    
+//    cellIdentifier = @"NoticiasHomeCell";
+//    cell = [tableView dequeueReusableCellWithIdentifier:cellIdentifier forIndexPath:indexPath];
+//    cell.textLabel.text = noticiaHome.tituloNovaNoticia;
+//    
+//    return cell;
+//    
+//}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

@@ -394,14 +394,6 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2Sz-XB-f2z">
-                                <rect key="frame" x="195" y="323" width="150" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="150" id="8Fz-gy-EOL"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="hI1-P8-x9h">
                                 <rect key="frame" x="74" y="140" width="79" height="29"/>
                                 <segments>
@@ -440,13 +432,31 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2Qm-es-hk6">
-                                <rect key="frame" x="178" y="283" width="150" height="30"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2Qm-es-hk6">
+                                <rect key="frame" x="175" y="283" width="365" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="150" id="Y46-NX-z1g"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="Y46-NX-z1g"/>
+                                    </mask>
+                                </variation>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2Sz-XB-f2z">
+                                <rect key="frame" x="198" y="323" width="375" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="250" id="8Fz-gy-EOL"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="8Fz-gy-EOL"/>
+                                    </mask>
+                                </variation>
                             </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -494,9 +504,11 @@
                             <constraint firstItem="55K-Vu-rvw" firstAttribute="top" secondItem="VoN-5R-f5h" secondAttribute="bottom" constant="10" id="hLk-aP-24V"/>
                             <constraint firstItem="PLz-3P-wbC" firstAttribute="centerY" secondItem="NWq-9b-yO3" secondAttribute="centerY" id="hV1-Jc-7D4"/>
                             <constraint firstItem="Wta-l6-qLo" firstAttribute="top" secondItem="LhS-Mi-fWi" secondAttribute="bottom" constant="5" id="iiJ-2e-xvv"/>
+                            <constraint firstAttribute="trailing" secondItem="2Qm-es-hk6" secondAttribute="trailing" constant="60" id="kat-Yr-g3t"/>
                             <constraint firstItem="yDU-OE-rIA" firstAttribute="centerY" secondItem="VG2-kk-pzX" secondAttribute="centerY" id="nlV-MG-RoU"/>
                             <constraint firstItem="yDU-OE-rIA" firstAttribute="top" secondItem="hI1-P8-x9h" secondAttribute="bottom" constant="5" id="oS9-tr-JLJ"/>
                             <constraint firstItem="TLm-gr-kz3" firstAttribute="top" secondItem="QSG-Ud-cdU" secondAttribute="bottom" constant="10" id="od9-6i-QxA"/>
+                            <constraint firstAttribute="trailing" secondItem="2Sz-XB-f2z" secondAttribute="trailing" constant="30" id="pNK-My-emT"/>
                             <constraint firstItem="fNi-3c-UwN" firstAttribute="top" secondItem="TLm-gr-kz3" secondAttribute="bottom" constant="10" id="uAY-5b-28t"/>
                             <constraint firstItem="NWq-9b-yO3" firstAttribute="leading" secondItem="VG2-kk-pzX" secondAttribute="leading" id="vu9-oS-6cq"/>
                             <constraint firstItem="yDU-OE-rIA" firstAttribute="top" secondItem="Wta-l6-qLo" secondAttribute="bottom" constant="5" id="xli-AG-kEp"/>
