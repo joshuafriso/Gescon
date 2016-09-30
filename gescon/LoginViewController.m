@@ -25,6 +25,10 @@
 +(NSUInteger)supportedInterfaceOrientations{
     return UIInterfaceOrientationMaskPortrait+UIInterfaceOrientationMaskPortraitUpsideDown;
 }
+-(void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
+    [self.view endEditing:YES];
+    [super touchesBegan:touches withEvent:event];
+}
 
 - (IBAction)botaoEntrar:(id)sender {
     self.userLogin = _loginLabel.text;

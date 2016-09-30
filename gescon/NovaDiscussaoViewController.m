@@ -20,6 +20,10 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
 }
+-(void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
+    [self.view endEditing:YES];
+    [super touchesBegan:touches withEvent:event];
+}
 - (IBAction)botaoCancelNovaDisc:(id)sender {
     [self.navigationController dismissViewControllerAnimated:YES completion:nil];
 }
