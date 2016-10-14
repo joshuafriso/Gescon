@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Realm/Realm.h"
 
 
 @interface LoginViewController : UIViewController
@@ -15,9 +16,7 @@
 
 @property (weak, nonatomic) IBOutlet UITextField *senhaLabel;
 
-@property NSString *userLogin;
-
-@property NSString *userSenha;
+@property RLMResults *users;
 
 - (IBAction)botaoEntrar:(id)sender;
 

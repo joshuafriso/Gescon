@@ -26,16 +26,6 @@
     return self;
 }
 
--(instancetype)initWithDescricao: (NSString *) descricaoNovaNoticia{
-    
-    if (self = [self init]) {
-        
-        self.descricaoNovaNoticia = descricaoNovaNoticia;
-        self.objectId = [[[NSUUID UUID] UUIDString]intValue];
-    }
-    return self;
-}
-
 +(NSString *)primaryKey{
     
     return @"objectId";
@@ -49,7 +39,6 @@
 {
     //Encode the properties of the object
     [encoder encodeObject:self.tituloNovaNoticia forKey:@"titulo"];
-    [encoder encodeObject:self.descricaoNovaNoticia forKey:@"descricaoNovaNot"];
     
 }
 
@@ -60,7 +49,6 @@
     {
         //decode the properties
         self.tituloNovaNoticia = [decoder decodeObjectForKey:@"titulo"];
-        self.descricaoNovaNoticia = [decoder decodeObjectForKey:@"descricaoNovaNot"];
     }
     return self;
 }

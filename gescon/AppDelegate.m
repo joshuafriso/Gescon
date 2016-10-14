@@ -7,7 +7,8 @@
 //
 
 #import "AppDelegate.h"
-//#import "Firebase.h"
+#import <Realm/Realm.h>
+//#import "User.h"
 
 @interface AppDelegate ()
 
@@ -17,7 +18,23 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    //[FIRApp configure];
+    
+    [NSURL URLWithString:@"https://db.gesconapp.com.br:443/#/Users"];
+    [RLMSyncUser all];
+    
+    [RLMSyncCredential credentialWithUsername:@"teste@gesconapp.com.br" password:@"1234" actions:RLMAuthenticationActionsUseExistingAccount];
+//    User *inserirTeste = [[User alloc]init];
+//    
+//    inserirTeste.userName = @"Teste";
+//    inserirTeste.password = @"1234";
+//    inserirTeste.tipoUser = @"Comum";
+//    
+//    RLMRealm *realm = [RLMRealm defaultRealm];
+//    
+//    [realm beginWriteTransaction];
+//    [realm addOrUpdateObject:inserirTeste];
+//    [realm commitWriteTransaction];
+    
     // Override point for customization after application launch.
     return YES;
 }

@@ -17,6 +17,5 @@
 
 -(instancetype) initWithTitulo: (NSString *) tituloNovaNoticia;
 
--(instancetype) initWithDescricao: (NSString *) descricaoNovaNoticia;
-
 @end
+RLM_ARRAY_TYPE(Noticia);

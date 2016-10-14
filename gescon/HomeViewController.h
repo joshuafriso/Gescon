@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "Realm/Realm.h"
+#import "Noticia.h"
 
 @interface HomeViewController : UIViewController //<UITableViewDataSource, UITableViewDelegate>
 
@@ -16,6 +17,6 @@
 
 @property (weak, nonatomic) IBOutlet UITableView *tableViewNoticias;
 
-@property RLMResults *arrayNoticiasHome;
+@property RLMArray <Noticia *> <Noticia> *noticiaArray;
 
 @end

@@ -8,6 +8,8 @@
 
 #import "LoginViewController.h"
 #import "HomeViewController.h"
+#import <Realm/Realm.h>
+#import "User.h"
 
 @interface LoginViewController ()
 
@@ -18,7 +20,10 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    self.users = [User allObjects];
+    
 }
+
 -(BOOL)shouldAutorotate{
     return NO;
 }
@@ -31,11 +36,22 @@
 }
 
 - (IBAction)botaoEntrar:(id)sender {
-    self.userLogin = _loginLabel.text;
-    self.userSenha = _senhaLabel.text;
     
-    if (([self.userLogin isEqualToString: @"Teste01"] && [self.userSenha isEqualToString:@"1234"]) || ([self.userLogin isEqualToString:@""] && [self.userSenha isEqualToString:@""])) {
-        _loginLabel.text = @"Tester";
+    self.users = [User objectsWhere:@"userName = %@  AND password = %@", _loginLabel.text, _senhaLabel.text];
+    int validator = _users.count;
+    
+    
+//    self.userLogin = _loginLabel.text;
+//    self.userSenha = _senhaLabel.text;
+    
+    
+//    NSURL *serverURL = [NSURL URLWithString:@"https://db.gesconapp.com.br/"];
+//    [RLMSyncUser all];
+//    
+//    RLMSyncCredential *usernameCredential = [RLMSyncCredential credentialWithUsername:self.userLogin password:self.userSenha actions:RLMAuthenticationActionsUseExistingAccount];
+//    [RLMSyncUser authenticateWithCredential:usernameCredential authServerURL:serverURL onCompletion:^(RLMSyncUser *user, NSError *error){
+    
+    if ((validator > 0) && (validator < 2 )) {
         
         [[NSUserDefaults standardUserDefaults] setObject:_loginLabel.text forKey:@"nomeUsuario"];
         [[NSUserDefaults standardUserDefaults]synchronize];

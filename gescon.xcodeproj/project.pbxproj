@@ -27,22 +27,14 @@
 		F912A2DB1D68C73200136202 /* NovaDiscussaoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F912A2DA1D68C73200136202 /* NovaDiscussaoViewController.m */; };
 		F912A2DE1D68D4BD00136202 /* TopicosTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F912A2DD1D68D4BD00136202 /* TopicosTableViewCell.m */; };
 		F912A2E01D68F03F00136202 /* ForumStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F912A2DF1D68F03F00136202 /* ForumStoryboard.storyboard */; };
-		F93D94C31D66777100DFF019 /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F93D94C21D66777000DFF019 /* Realm.framework */; };
-		F93D94C41D66777100DFF019 /* Realm.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F93D94C21D66777000DFF019 /* Realm.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		F93D94C91D6679CF00DFF019 /* NoticiasTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F93D94C81D6679CF00DFF019 /* NoticiasTableViewController.m */; };
 		F93D94CC1D667D9400DFF019 /* NoticiaTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F93D94CB1D667D9400DFF019 /* NoticiaTableViewCell.m */; };
 		F93D94CF1D6681EA00DFF019 /* Noticia.m in Sources */ = {isa = PBXBuildFile; fileRef = F93D94CE1D6681EA00DFF019 /* Noticia.m */; };
 		F94367BA1D9C85580030CD06 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F94367B91D9C85570030CD06 /* GoogleService-Info.plist */; };
-		F94367C01D9C983E0030CD06 /* FirebaseAnalytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F94367BF1D9C983E0030CD06 /* FirebaseAnalytics.framework */; };
-		F94367C21D9C98550030CD06 /* FirebaseDatabase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F94367C11D9C98550030CD06 /* FirebaseDatabase.framework */; };
-		F94367C41D9C989D0030CD06 /* FirebaseStorage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F94367C31D9C989D0030CD06 /* FirebaseStorage.framework */; };
-		F94367C61D9C98B40030CD06 /* GoogleNetworkingUtilities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F94367C51D9C98B40030CD06 /* GoogleNetworkingUtilities.framework */; };
-		F94367C81D9C98BD0030CD06 /* FirebaseInstanceID.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F94367C71D9C98BD0030CD06 /* FirebaseInstanceID.framework */; };
-		F94367CC1D9C98C90030CD06 /* GoogleInterchangeUtilities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F94367C91D9C98C90030CD06 /* GoogleInterchangeUtilities.framework */; };
-		F94367CD1D9C98C90030CD06 /* GoogleSymbolUtilities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F94367CA1D9C98C90030CD06 /* GoogleSymbolUtilities.framework */; };
-		F94367CE1D9C98C90030CD06 /* GoogleUtilities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F94367CB1D9C98C90030CD06 /* GoogleUtilities.framework */; };
 		F94B87451D67E5C100F73801 /* NoticiaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F94B87441D67E5C100F73801 /* NoticiaViewController.m */; };
 		F94B87481D67E85000F73801 /* NovaNoticiaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F94B87471D67E85000F73801 /* NovaNoticiaViewController.m */; };
+		F94F3E2C1DB066180070163A /* Realm.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F94F3E2B1DB066180070163A /* Realm.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F94F3E2E1DB0669C0070163A /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = F94F3E2D1DB0669C0070163A /* libc++.tbd */; };
 		F95A66061D60E76C0051C84A /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F95A66051D60E76C0051C84A /* LoginViewController.m */; };
 		F970A48B1D63D0510090032B /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F970A48A1D63D0510090032B /* HomeViewController.m */; };
 		F97C2BD11D71FE0B008340C3 /* ClassificadosTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F97C2BD01D71FE0B008340C3 /* ClassificadosTableViewController.m */; };
@@ -53,6 +45,7 @@
 		F97C2BE61D7211E3008340C3 /* ExibirImagemNovoProdCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F97C2BE51D7211E3008340C3 /* ExibirImagemNovoProdCollectionViewCell.m */; };
 		F97C2BE91D7229B1008340C3 /* ProdutoDetalhesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F97C2BE81D7229B1008340C3 /* ProdutoDetalhesViewController.m */; };
 		F97C2BEC1D722E29008340C3 /* ClassificadosStoreBoard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F97C2BEB1D722E29008340C3 /* ClassificadosStoreBoard.storyboard */; };
+		F981F5ED1DADCB200001F67C /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = F981F5EC1DADCB200001F67C /* User.m */; };
 		F994435B1D8CCE1F0099D152 /* CorrespondenciaStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F994435A1D8CCE1F0099D152 /* CorrespondenciaStoryboard.storyboard */; };
 		F99443611D8DD5460099D152 /* NewComentTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F99443601D8DD5460099D152 /* NewComentTableViewCell.m */; };
 		F99443641D8DDC370099D152 /* AddNewComentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F99443631D8DDC370099D152 /* AddNewComentViewController.m */; };
@@ -66,13 +59,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		F93D94C51D66777100DFF019 /* Embed Frameworks */ = {
+		F9A58A601DAB00B4000CB499 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				F93D94C41D66777100DFF019 /* Realm.framework in Embed Frameworks */,
+				F94F3E2C1DB066180070163A /* Realm.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -117,27 +110,19 @@
 		F912A2DC1D68D4BD00136202 /* TopicosTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TopicosTableViewCell.h; sourceTree = "<group>"; };
 		F912A2DD1D68D4BD00136202 /* TopicosTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TopicosTableViewCell.m; sourceTree = "<group>"; };
 		F912A2DF1D68F03F00136202 /* ForumStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ForumStoryboard.storyboard; sourceTree = "<group>"; };
-		F93D94C21D66777000DFF019 /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Realm.framework; sourceTree = "<group>"; };
 		F93D94C71D6679CF00DFF019 /* NoticiasTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NoticiasTableViewController.h; sourceTree = "<group>"; };
 		F93D94C81D6679CF00DFF019 /* NoticiasTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NoticiasTableViewController.m; sourceTree = "<group>"; };
 		F93D94CA1D667D9400DFF019 /* NoticiaTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NoticiaTableViewCell.h; sourceTree = "<group>"; };
 		F93D94CB1D667D9400DFF019 /* NoticiaTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NoticiaTableViewCell.m; sourceTree = "<group>"; };
 		F93D94CD1D6681EA00DFF019 /* Noticia.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Noticia.h; sourceTree = "<group>"; };
 		F93D94CE1D6681EA00DFF019 /* Noticia.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Noticia.m; sourceTree = "<group>"; };
-		F94367B91D9C85570030CD06 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		F94367BF1D9C983E0030CD06 /* FirebaseAnalytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FirebaseAnalytics.framework; sourceTree = "<group>"; };
-		F94367C11D9C98550030CD06 /* FirebaseDatabase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FirebaseDatabase.framework; sourceTree = "<group>"; };
-		F94367C31D9C989D0030CD06 /* FirebaseStorage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FirebaseStorage.framework; sourceTree = "<group>"; };
-		F94367C51D9C98B40030CD06 /* GoogleNetworkingUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleNetworkingUtilities.framework; sourceTree = "<group>"; };
-		F94367C71D9C98BD0030CD06 /* FirebaseInstanceID.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FirebaseInstanceID.framework; sourceTree = "<group>"; };
-		F94367C91D9C98C90030CD06 /* GoogleInterchangeUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleInterchangeUtilities.framework; sourceTree = "<group>"; };
-		F94367CA1D9C98C90030CD06 /* GoogleSymbolUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleSymbolUtilities.framework; sourceTree = "<group>"; };
-		F94367CB1D9C98C90030CD06 /* GoogleUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleUtilities.framework; sourceTree = "<group>"; };
-		F94367CF1D9C98F40030CD06 /* Firebase.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Firebase.h; sourceTree = "<group>"; };
+		F94367B91D9C85570030CD06 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../GoogleService-Info.plist"; sourceTree = "<group>"; };
 		F94B87431D67E5C100F73801 /* NoticiaViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NoticiaViewController.h; sourceTree = "<group>"; };
 		F94B87441D67E5C100F73801 /* NoticiaViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NoticiaViewController.m; sourceTree = "<group>"; };
 		F94B87461D67E85000F73801 /* NovaNoticiaViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NovaNoticiaViewController.h; sourceTree = "<group>"; };
 		F94B87471D67E85000F73801 /* NovaNoticiaViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NovaNoticiaViewController.m; sourceTree = "<group>"; };
+		F94F3E2B1DB066180070163A /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Realm.framework; path = ../Realm.framework; sourceTree = "<group>"; };
+		F94F3E2D1DB0669C0070163A /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
 		F95A66041D60E76C0051C84A /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
 		F95A66051D60E76C0051C84A /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
 		F970A4891D63D0510090032B /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
@@ -157,6 +142,8 @@
 		F97C2BE71D7229B1008340C3 /* ProdutoDetalhesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProdutoDetalhesViewController.h; sourceTree = "<group>"; };
 		F97C2BE81D7229B1008340C3 /* ProdutoDetalhesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProdutoDetalhesViewController.m; sourceTree = "<group>"; };
 		F97C2BEB1D722E29008340C3 /* ClassificadosStoreBoard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ClassificadosStoreBoard.storyboard; sourceTree = "<group>"; };
+		F981F5EB1DADCB200001F67C /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
+		F981F5EC1DADCB200001F67C /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
 		F994435A1D8CCE1F0099D152 /* CorrespondenciaStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = CorrespondenciaStoryboard.storyboard; sourceTree = "<group>"; };
 		F994435F1D8DD5460099D152 /* NewComentTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewComentTableViewCell.h; sourceTree = "<group>"; };
 		F99443601D8DD5460099D152 /* NewComentTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewComentTableViewCell.m; sourceTree = "<group>"; };
@@ -181,15 +168,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F94367CC1D9C98C90030CD06 /* GoogleInterchangeUtilities.framework in Frameworks */,
-				F94367C01D9C983E0030CD06 /* FirebaseAnalytics.framework in Frameworks */,
-				F94367CD1D9C98C90030CD06 /* GoogleSymbolUtilities.framework in Frameworks */,
-				F94367C61D9C98B40030CD06 /* GoogleNetworkingUtilities.framework in Frameworks */,
-				F94367C81D9C98BD0030CD06 /* FirebaseInstanceID.framework in Frameworks */,
-				F93D94C31D66777100DFF019 /* Realm.framework in Frameworks */,
-				F94367C21D9C98550030CD06 /* FirebaseDatabase.framework in Frameworks */,
-				F94367C41D9C989D0030CD06 /* FirebaseStorage.framework in Frameworks */,
-				F94367CE1D9C98C90030CD06 /* GoogleUtilities.framework in Frameworks */,
+				F94F3E2E1DB0669C0070163A /* libc++.tbd in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -303,17 +282,7 @@
 		F9C259B41D5A98FF00CF9DF3 = {
 			isa = PBXGroup;
 			children = (
-				F94367CF1D9C98F40030CD06 /* Firebase.h */,
-				F94367C91D9C98C90030CD06 /* GoogleInterchangeUtilities.framework */,
-				F94367CA1D9C98C90030CD06 /* GoogleSymbolUtilities.framework */,
-				F94367CB1D9C98C90030CD06 /* GoogleUtilities.framework */,
-				F94367C71D9C98BD0030CD06 /* FirebaseInstanceID.framework */,
-				F94367C51D9C98B40030CD06 /* GoogleNetworkingUtilities.framework */,
-				F94367C31D9C989D0030CD06 /* FirebaseStorage.framework */,
-				F94367C11D9C98550030CD06 /* FirebaseDatabase.framework */,
-				F94367BF1D9C983E0030CD06 /* FirebaseAnalytics.framework */,
-				F94367B91D9C85570030CD06 /* GoogleService-Info.plist */,
-				F93D94C21D66777000DFF019 /* Realm.framework */,
+				F94F3E2D1DB0669C0070163A /* libc++.tbd */,
 				F9C259BF1D5A98FF00CF9DF3 /* Gescon */,
 				F9C259BE1D5A98FF00CF9DF3 /* Products */,
 			);
@@ -330,6 +299,8 @@
 		F9C259BF1D5A98FF00CF9DF3 /* Gescon */ = {
 			isa = PBXGroup;
 			children = (
+				F94F3E2B1DB066180070163A /* Realm.framework */,
+				F94367B91D9C85570030CD06 /* GoogleService-Info.plist */,
 				F99443591D8CCDE80099D152 /* Correspondencia */,
 				F90362EB1D88F52600BBF2A2 /* Aviso_Chegada */,
 				F97C2BEA1D722DFF008340C3 /* Classificados */,
@@ -337,6 +308,8 @@
 				F912A2C91D68A11300136202 /* Noticia */,
 				F9C259C31D5A98FF00CF9DF3 /* AppDelegate.h */,
 				F9C259C41D5A98FF00CF9DF3 /* AppDelegate.m */,
+				F981F5EB1DADCB200001F67C /* User.h */,
+				F981F5EC1DADCB200001F67C /* User.m */,
 				F9C259C61D5A98FF00CF9DF3 /* ViewController.h */,
 				F9C259C71D5A98FF00CF9DF3 /* ViewController.m */,
 				F95A66041D60E76C0051C84A /* LoginViewController.h */,
@@ -371,8 +344,8 @@
 				F9C259B91D5A98FF00CF9DF3 /* Sources */,
 				F9C259BA1D5A98FF00CF9DF3 /* Frameworks */,
 				F9C259BB1D5A98FF00CF9DF3 /* Resources */,
-				F93D94C51D66777100DFF019 /* Embed Frameworks */,
 				F93D94C61D6677AB00DFF019 /* ShellScript */,
+				F9A58A601DAB00B4000CB499 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -438,7 +411,7 @@
 /* Begin PBXShellScriptBuildPhase section */
 		F93D94C61D6677AB00DFF019 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
+			buildActionMask = 12;
 			files = (
 			);
 			inputPaths = (
@@ -490,6 +463,7 @@
 				F9C259C21D5A98FF00CF9DF3 /* main.m in Sources */,
 				F97C2BE61D7211E3008340C3 /* ExibirImagemNovoProdCollectionViewCell.m in Sources */,
 				F93D94C91D6679CF00DFF019 /* NoticiasTableViewController.m in Sources */,
+				F981F5ED1DADCB200001F67C /* User.m in Sources */,
 				F90362DE1D88C93D00BBF2A2 /* AvisoChegadaTableViewCell.m in Sources */,
 				F90362FC1D8904B700BBF2A2 /* ShowCorrespondenciaViewController.m in Sources */,
 				F99443671D8DF7A80099D152 /* NovoComent.m in Sources */,
@@ -612,6 +586,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/gescon",
 				);
 				INFOPLIST_FILE = gescon/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -632,6 +607,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/gescon",
 				);
 				INFOPLIST_FILE = gescon/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
