@@ -196,7 +196,8 @@
                     <navigationItem key="navigationItem" title="Tópico" id="mzv-Aw-cOt">
                         <barButtonItem key="rightBarButtonItem" title="Comentar" id="Atm-z0-eKW">
                             <connections>
-                                <segue destination="cdC-Tk-Rkj" kind="presentation" id="Pbc-sJ-ydw"/>
+                                <action selector="botaoComentar:" destination="n6z-HG-uM0" id="FV2-9w-G77"/>
+                                <segue destination="cdC-Tk-Rkj" kind="custom" identifier="SetaNavControlComent" id="apd-n6-1mU"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>

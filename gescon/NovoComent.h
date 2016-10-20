@@ -7,7 +7,6 @@
 //
 
 #import <Realm/Realm.h>
-#import "Forum.h"
 
 @interface NovoComent : RLMObject
 
@@ -17,12 +16,12 @@
 @property NSString *usuarioLogado;
 @property NSDate *dataPostagem;
 @property NSString *tipoComent;
+@property (readonly)RLMLinkingObjects *owners;
 
-@property Forum *forum;
 
 -(instancetype)initWithTipo: (NSString *) tipoComent;
 
-//-(void) inserirComentario: (NSString *) detalhes eUserComent: (NSString *) userComent eDataPost: (NSDate *) dataPost eTipo: (NSString *) typeComent;
-//-(RLMResults<NovoComent *> *) getComent;
 
 @end
+
+RLM_ARRAY_TYPE(NovoComent);

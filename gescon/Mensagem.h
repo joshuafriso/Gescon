@@ -7,6 +7,8 @@
 //
 
 #import <Realm/Realm.h>
+#import "NovoComent.h"
+#import "NovoComent.h"
 
 @interface Mensagem : RLMObject
 
@@ -16,5 +18,7 @@
 @property NSString *usuarioLogado;
 @property NSDate *dataPostagem;
 @property NSString *tipoMensagem;
+@property RLMArray<NovoComent *><NovoComent> *coment;
+
 
 @end

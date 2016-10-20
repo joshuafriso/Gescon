@@ -11,6 +11,8 @@
 #import "Forum.h"
 #import "NewComentTableViewCell.h"
 #import "NovoComent.h"
+#import "AddNewComentViewController.h"
+#import <objc/runtime.h>
 
 @interface TopicoTableViewController ()
 
@@ -22,7 +24,7 @@
     [super viewDidLoad];
     
     self.arrayTopicoDetalhes = [self.forum getMensagens];
-    self.arrayComentarios = [NovoComent allObjects];
+    //self.arrayComentarios = [self.forum getComent];
     
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
@@ -44,6 +46,7 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
 
 #pragma mark - Table view data source
 
@@ -92,6 +95,7 @@
             NSDate *date = msg.dataPostagem;
             NSString *convertedString = [formatterDate stringFromDate: date];
             cellTopico.dataPostagemDiscussao.text = convertedString;
+            cellTopico.forum.objectId = msg.forumId;
                     
         }
         return cellTopico;
@@ -115,6 +119,7 @@
      }
     
 }
+
 
 
 /*
@@ -151,14 +156,18 @@
 }
 */
 
-/*
+
 #pragma mark - Navigation
 
 // In a storyboard-based application, you will often want to do a little preparation before navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+    if ([segue.identifier isEqualToString:@"SetaNavControlComent"]) {
+        TopicosTableViewCell *topicCell = sender;
+        
+        AddNewComentViewController *addComent = segue.destinationViewController;
+        
+        addComent.forum = topicCell.forum;
+    }
 }
-*/
 
 @end

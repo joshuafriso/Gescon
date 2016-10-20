@@ -19,6 +19,5 @@
 -(instancetype) initWithTema: (NSString *) tema;
 -(void) inserirMensagemComTexto: (NSString *) texto eUsuarioLogado: (NSString *) usuario eData: (NSDate *) data eTipo:(NSString *) type;
 -(RLMResults<Mensagem *> *) getMensagens;
-
 @end
 

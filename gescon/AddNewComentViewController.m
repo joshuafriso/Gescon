@@ -18,6 +18,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    self.mensagens = [self.forum getMensagens];
     // Do any additional setup after loading the view.
 }
 -(void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
@@ -32,11 +34,14 @@
 - (IBAction)botaoDoneNewComent:(id)sender {
     
     NovoComent *novoComent = [[NovoComent alloc] initWithTipo: @"Coment"];
-    
+    Mensagem *msg = _mensagens[0];
+        
     novoComent.usuarioLogado = [[NSUserDefaults standardUserDefaults]objectForKey:@"nomeUsuario"];
     novoComent.dataPostagem = [NSDate date];
     novoComent.detalhesComent = _novoComentLabel.text;
-    novoComent.forumId = self.mensagem.forumId;
+    novoComent.forumId = msg.forumId;
+    
+    [msg.coment addObject: novoComent];
     
     
     RLMRealm *realmComent = [RLMRealm defaultRealm];
